@@ -514,8 +514,8 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 .btn-success:active,.btn-success.active{background-color:#408140 \9;}
 .btn-info{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#ea5b54;background-image:-moz-linear-gradient(top, #ea5b54, #ea5b54);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ea5b54), to(#ea5b54));background-image:-webkit-linear-gradient(top, #ea5b54, #ea5b54);background-image:-o-linear-gradient(top, #ea5b54, #ea5b54);background-image:linear-gradient(to bottom, #ea5b54, #ea5b54);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffea5b54', endColorstr='#ffea5b54', GradientType=0);border-color:#ea5b54 #ea5b54 #d7231a;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#ea5b54;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-info:hover,.btn-info:active,.btn-info.active,.btn-info.disabled,.btn-info[disabled]{color:#ffffff;background-color:#ea5b54;*background-color:#e7453d;}
 .btn-info:active,.btn-info.active{background-color:#e42f27 \9;}
-.btn-inverse{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#363636;background-image:-moz-linear-gradient(top, #444444, #222222);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));background-image:-webkit-linear-gradient(top, #444444, #222222);background-image:-o-linear-gradient(top, #444444, #222222);background-image:linear-gradient(to bottom, #444444, #222222);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);border-color:#222222 #222222 #000000;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#222222;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-inverse:hover,.btn-inverse:active,.btn-inverse.active,.btn-inverse.disabled,.btn-inverse[disabled]{color:#ffffff;background-color:#222222;*background-color:#151515;}
-.btn-inverse:active,.btn-inverse.active{background-color:#080808 \9;}
+.btn-inverse{color:#ffffff;text-shadow:0 -1px 0 rgba(0, 0, 0, 0.25);background-color:#484848;background-image:-moz-linear-gradient(top, #444444, #4d4d4d);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#4d4d4d));background-image:-webkit-linear-gradient(top, #444444, #4d4d4d);background-image:-o-linear-gradient(top, #444444, #4d4d4d);background-image:linear-gradient(to bottom, #444444, #4d4d4d);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff4d4d4d', GradientType=0);border-color:#4d4d4d #4d4d4d #272727;border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);*background-color:#4d4d4d;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);}.btn-inverse:hover,.btn-inverse:active,.btn-inverse.active,.btn-inverse.disabled,.btn-inverse[disabled]{color:#ffffff;background-color:#4d4d4d;*background-color:#404040;}
+.btn-inverse:active,.btn-inverse.active{background-color:#333333 \9;}
 button.btn,input[type="submit"].btn{*padding-top:3px;*padding-bottom:3px;}button.btn::-moz-focus-inner,input[type="submit"].btn::-moz-focus-inner{padding:0;border:0;}
 button.btn.btn-large,input[type="submit"].btn.btn-large{*padding-top:7px;*padding-bottom:7px;}
 button.btn.btn-small,input[type="submit"].btn.btn-small{*padding-top:3px;*padding-bottom:3px;}
@@ -550,7 +550,7 @@ button.btn.btn-mini,input[type="submit"].btn.btn-mini{*padding-top:1px;*padding-
 .btn-group.open .btn-danger.dropdown-toggle{background-color:#bd362f;}
 .btn-group.open .btn-success.dropdown-toggle{background-color:#51a351;}
 .btn-group.open .btn-info.dropdown-toggle{background-color:#ea5b54;}
-.btn-group.open .btn-inverse.dropdown-toggle{background-color:#222222;}
+.btn-group.open .btn-inverse.dropdown-toggle{background-color:#4d4d4d;}
 .btn .caret{margin-top:8px;margin-left:0;}
 .btn-mini .caret,.btn-small .caret,.btn-large .caret{margin-top:6px;}
 .btn-large .caret{border-left-width:5px;border-right-width:5px;border-top-width:5px;}
@@ -837,7 +837,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .carousel-inner>.next.left,.carousel-inner>.prev.right{left:0;}
 .carousel-inner>.active.left{left:-100%;}
 .carousel-inner>.active.right{left:100%;}
-.carousel-control{position:absolute;top:40%;left:15px;width:40px;height:40px;margin-top:-20px;font-size:60px;font-weight:100;line-height:30px;color:#ffffff;text-align:center;background:#222222;border:3px solid #ffffff;-webkit-border-radius:23px;-moz-border-radius:23px;border-radius:23px;opacity:0.5;filter:alpha(opacity=50);}.carousel-control.right{left:auto;right:15px;}
+.carousel-control{position:absolute;top:40%;left:15px;width:40px;height:40px;margin-top:-20px;font-size:60px;font-weight:100;line-height:30px;color:#ffffff;text-align:center;background:#4d4d4d;border:3px solid #ffffff;-webkit-border-radius:23px;-moz-border-radius:23px;border-radius:23px;opacity:0.5;filter:alpha(opacity=50);}.carousel-control.right{left:auto;right:15px;}
 .carousel-control:hover{color:#ffffff;text-decoration:none;opacity:0.9;filter:alpha(opacity=90);}
 .carousel-caption{position:absolute;left:0;right:0;bottom:0;padding:15px;background:#333333;background:rgba(0, 0, 0, 0.75);}
 .carousel-caption h4,.carousel-caption p{color:#ffffff;line-height:20px;}
@@ -851,7 +851,14 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 .affix{position:fixed;}
-.top{background:url(../img/topbg.png) repeat;}
+.top{background:url(../img/topbg.png) repeat;padding-bottom:40px;}
+.jumbo{text-align:center;}.jumbo h1{color:#4d4d4d;}
+.navbar{height:55px;}
+hr{margin:20px 0;border:0;border-top:1px solid #9184bd;border-bottom:1px solid #eceaef;}
+.topcta{width:70px;margin-left:10px;margin-right:10px;}
+.navbar .nav>li{margin-top:20px;}
+.navlast{padding-right:0 !important;}
+.nav>li>a{font-size:16px;}
 .pull-right{float:right;}
 .pull-left{float:left;}
 .hide{display:none;}
