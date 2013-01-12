@@ -27,10 +27,7 @@ border-bottom: 1px solid #eceaef;
 
 .topcta {
 	width: 70px;
-	margin-left: 10px;
-	margin-right: 10px;
-	margin-bottom: 20px;
-	margin-top:10px;
+	margin: 10px 10px 20px 10px;
 }
 
 .navbar .nav > li {
@@ -55,3 +52,78 @@ font-size: 16px;
 	min-height: 300px;
 	background: url(../img/contentbg.png) repeat;
 }
+
+.hot {
+	text-align:center;
+	margin-top: 20px;
+	line-height: 5px;
+}
+
+.featureditem {
+	text-align: left;
+	width: 220px;
+	height: 250px;
+	background: @white;
+	float:left;
+	margin: 0 6px 50px 6px;
+	border: solid 1px #cbcbcb;
+	.border-radius(2px);
+	.box-shadow(0 1px 3px rgba(0,0,0,.10)) !important;
+	padding: 2px 2px 5px 2px;
+
+}
+.btn-primary {
+  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackground);
+  border: 1px solid #645691 !important;
+  &:hover {
+    color: @grayDark;
+    text-decoration: none;
+    background-position: 0 -100px;
+  .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackgroundHighlight);
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    .transition(background-color .1s);
+  }
+}
+
+.btn-info {
+  .buttonBackground(@btnInfoBackground, @btnInfoBackground);
+  border: 1px solid #b84842;
+  &:hover {
+    color: @grayDark;
+    text-decoration: none;
+    background-position: 0 -100px;
+  .buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackgroundHighlight);
+
+    // transition is only when going to hover, otherwise the background
+    // behind the gradient (there for IE<=9 fallback) gets mismatched
+    .transition(background-color .1s);
+  }
+}
+
+.last {
+	margin-right:0;
+}
+
+.first {
+	margin-left:0;
+}
+
+.hotfeaturedtext {
+	margin: 8px 6px 5px 6px;
+	font-size: 12px;
+	line-height: 17px;
+	color: @gray;
+	strong {color: @black;}
+	hr {
+		margin: 10px 0;
+		border: 0;
+		border-top: 1px solid #d9d9d9;
+	}
+}
+
+.hotfeatured {
+	margin-top: 30px;
+}
+
