@@ -851,6 +851,7 @@ a.label:hover,a.badge:hover{color:#ffffff;text-decoration:none;cursor:pointer;}
 .show{display:block;}
 .invisible{visibility:hidden;}
 .affix{position:fixed;}
+.top{background:url(../img/topbg.png) repeat;}
 .pull-right{float:right;}
 .pull-left{float:left;}
 .hide{display:none;}
