@@ -1,7 +1,45 @@
+// CUSTOM CSS
+
+hr {
+margin: 20px 0;
+border: 0;
+border-top: 1px solid #9184bd;
+border-bottom: 1px solid #eceaef;
+}
+
 .top {
 	background: url(../img/topbg.png) repeat;
 }
 
+// ### NAV BAR ###
+.navbar {
+	height: 55px;
+}
+
+.navbar .nav > li {
+margin-top: 25px;
+}
+
+.navlast {
+	padding-right:0 !important;
+}
+
+.nav > li > a {
+	font-size: 16px;
+}
+
+.nav > li > a > span {
+	padding-bottom: 18px;
+}
+
+.nav > li > a > span:hover{
+	background-color: transparent;
+	color: #333333;text-decoration:none;
+	border-bottom: 3px solid @purple;
+}
+
+
+// ### TOP CTA ###
 .jumbo { 
 	text-align: center;
 	h1 {color:@grayDarker}
@@ -14,64 +52,37 @@
 	}
 }
 
-.navbar {
-	height: 55px;
-}
-
-hr {
-margin: 20px 0;
-border: 0;
-border-top: 1px solid #9184bd;
-border-bottom: 1px solid #eceaef;
-}
-
 .topcta {
 	width: 70px;
 	margin: 10px 10px 20px 10px;
 }
 
-.navbar .nav > li {
-margin-top: 25px;
-}
-
-.navlast {
-	padding-right:0 !important;
-}
-
-.nav > li > a {
-font-size: 16px;
-}
-
-.nav > li > a > span {
-	padding-bottom: 18px;
-}
-
-.nav>li>a>span:hover{
-	background-color: transparent;
-	color: #333333;text-decoration:none;
-	border-bottom: 3px solid @purple;
-}
-
-
+// ### SOCIAL BAR ###
 .socialDivide {
 	height: 35px;
 	#gradient > .vertical(@white, #F0F0F0);
 	border-bottom: solid 1px #c0b9c4;
 }
 
-#content {
-	min-height: 300px;
-	background: url(../img/contentbg.png) repeat;
-}
-
-#footer {
-	min-height: 50px;
-	border-top: 1px solid #c0b9c4;
-	background: @white;
+.social-buttons {
 	text-align: center;
-	padding: 30px 0 0 0;
+	margin-left: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+	margin-top: 3px;
+	.social-buttons li {
+		display: inline-block;
+		padding: 5px 8px;
+		line-height: 1;
+	}
 }
 
+.fb_iframe_widget {
+top: -8px !important;
+}
+
+//  ## FRONT PAGE FEATURED CONTENT ##
 .hot {
 	text-align:center;
 	margin-top: 20px;
@@ -81,7 +92,7 @@ font-size: 16px;
 
 .featureditem {
 	text-align: left;
-	width: 220px;
+	width: 210px;
 	height: 250px;
 	background: @white;
 	float:left;
@@ -91,43 +102,6 @@ font-size: 16px;
 	.box-shadow(0 1px 3px rgba(0,0,0,.10)) !important;
 	padding: 2px 2px 5px 2px;
 
-}
-.btn-primary {
-  .buttonBackground(@btnPrimaryBackground, @btnPrimaryBackground);
-  border: 1px solid #645691 !important;
-  &:hover {
-    color: @grayDark;
-    text-decoration: none;
-    background-position: 0 -100px;
-  .buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackgroundHighlight);
-
-    // transition is only when going to hover, otherwise the background
-    // behind the gradient (there for IE<=9 fallback) gets mismatched
-    .transition(background-color .1s);
-  }
-}
-
-.btn-info {
-  .buttonBackground(@btnInfoBackground, @btnInfoBackground);
-  border: 1px solid #b84842;
-  &:hover {
-    color: @grayDark;
-    text-decoration: none;
-    background-position: 0 -100px;
-  .buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackgroundHighlight);
-
-    // transition is only when going to hover, otherwise the background
-    // behind the gradient (there for IE<=9 fallback) gets mismatched
-    .transition(background-color .1s);
-  }
-}
-
-.last {
-	margin-right:0;
-}
-
-.first {
-	margin-left:0;
 }
 
 .hotfeaturedtext {
@@ -147,22 +121,53 @@ font-size: 16px;
 	margin-top: 30px;
 }
 
-.bs-docs-social-buttons {
-text-align: center;
-margin-left: 0;
-margin-bottom: 0;
-padding-left: 0;
-list-style: none;
-margin-top: 3px;
+//  ### CUSTOM BUTTONS ###
+.btn-primary {
+	.buttonBackground(@btnPrimaryBackground, @btnPrimaryBackground);
+	border: 1px solid #645691 !important;
+	&:hover {
+    	color: @grayDark;
+    	text-decoration: none;
+    	background-position: 0 -100px;
+  		.buttonBackground(@btnPrimaryBackgroundHighlight, @btnPrimaryBackgroundHighlight);
+    	// transition is only when going to hover, otherwise the background
+    	// behind the gradient (there for IE<=9 fallback) gets mismatched
+    	.transition(background-color .1s);
+  	}
 }
 
-.bs-docs-social-buttons li {
-display: inline-block;
-padding: 5px 8px;
-line-height: 1;
+.btn-info {
+	.buttonBackground(@btnInfoBackground, @btnInfoBackground);
+	border: 1px solid #b84842;
+	&:hover {
+    	color: @grayDark;
+    	text-decoration: none;
+    	background-position: 0 -100px;
+  		.buttonBackground(@btnInfoBackgroundHighlight, @btnInfoBackgroundHighlight);
+	    // transition is only when going to hover, otherwise the background
+    	// behind the gradient (there for IE<=9 fallback) gets mismatched
+    	.transition(background-color .1s);
+  	}
 }
 
-.fb_iframe_widget {
-top: -8px !important;
+// ### OTHER ###
+#content {
+	min-height: 300px;
+	background: url(../img/contentbg.png) repeat;
 }
 
+#footer {
+	min-height: 50px;
+	border-top: 1px solid #c0b9c4;
+	background: @white;
+	text-align: center;
+	padding: 30px 0 0 0;
+}
+
+.last {
+	margin-right:0;
+}
+
+.first {
+	margin-left:0;
+}
