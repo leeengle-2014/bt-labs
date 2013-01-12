@@ -863,7 +863,8 @@ hr{margin:20px 0;border:0;border-top:1px solid #9184bd;border-bottom:1px solid #
 .jumbo p{line-height:24px;font-size:22px;font-weight:300;}
 .topcta{width:70px;margin:10px 10px 20px 10px;}
 .socialDivide{height:35px;background-color:#f9f9f9;background-image:-moz-linear-gradient(top, #ffffff, #f0f0f0);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f0f0f0));background-image:-webkit-linear-gradient(top, #ffffff, #f0f0f0);background-image:-o-linear-gradient(top, #ffffff, #f0f0f0);background-image:linear-gradient(to bottom, #ffffff, #f0f0f0);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff0f0f0', GradientType=0);border-bottom:solid 1px #c0b9c4;}
-.social-buttons{text-align:center;margin-left:0;margin-bottom:0;padding-left:0;list-style:none;margin-top:3px;}.social-buttons .social-buttons li{display:inline-block;padding:5px 8px;line-height:1;}
+.social-buttons{text-align:center;margin-left:0;margin-bottom:0;padding-left:0;list-style:none;margin-top:3px;}
+.social-buttons li{display:inline-block;padding:5px 8px;line-height:1;}
 .fb_iframe_widget{top:-8px !important;}
 .hot{text-align:center;margin-top:20px;line-height:5px;}.hot h2{color:#4d4d4d;font-weight:400;}
 .featureditem{text-align:left;width:210px;height:250px;background:#ffffff;float:left;margin:0 6px 50px 6px;border:solid 1px #cbcbcb;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1) !important;-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1) !important;box-shadow:0 1px 3px rgba(0, 0, 0, 0.1) !important;padding:2px 2px 5px 2px;}
