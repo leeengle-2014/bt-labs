@@ -42,21 +42,41 @@ margin-top: 25px;
 font-size: 16px;
 }
 
+.nav > li > a > span {
+	padding-bottom: 18px;
+}
+
+.nav>li>a>span:hover{
+	background-color: transparent;
+	color: #333333;text-decoration:none;
+	border-bottom: 3px solid @purple;
+}
+
+
 .socialDivide {
 	height: 35px;
 	#gradient > .vertical(@white, #F0F0F0);
 	border-bottom: solid 1px #c0b9c4;
 }
 
-.content {
+#content {
 	min-height: 300px;
 	background: url(../img/contentbg.png) repeat;
+}
+
+#footer {
+	min-height: 50px;
+	border-top: 1px solid #c0b9c4;
+	background: @white;
+	text-align: center;
+	padding: 30px 0 0 0;
 }
 
 .hot {
 	text-align:center;
 	margin-top: 20px;
 	line-height: 5px;
+	h2 {color:@grayDarker;font-weight:400;}
 }
 
 .featureditem {
