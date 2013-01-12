@@ -879,7 +879,7 @@ hr{margin:20px 0;border:0;border-top:1px solid #9184bd;border-bottom:1px solid #
 .hotfeatured{margin-top:30px;}
 .bs-docs-social-buttons{text-align:center;margin-left:0;margin-bottom:0;padding-left:0;list-style:none;margin-top:3px;}
 .bs-docs-social-buttons li{display:inline-block;padding:5px 8px;line-height:1;}
-.fb_iframe_widget{top:-3px;}
+.fb_iframe_widget{top:-8px !important;}
 .pull-right{float:right;}
 .pull-left{float:left;}
 .hide{display:none;}
