@@ -1,11 +1,17 @@
 .top {
 	background: url(../img/topbg.png) repeat;
-	padding-bottom: 40px;
 }
 
 .jumbo { 
 	text-align: center;
 	h1 {color:@grayDarker}
+	border-bottom: 1px solid #c0b9c4;
+	color:@grayDarker;
+	p {
+		line-height:24px;
+		font-size:22px;
+		font-weight:300;
+	}
 }
 
 .navbar {
@@ -23,10 +29,12 @@ border-bottom: 1px solid #eceaef;
 	width: 70px;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 20px;
+	margin-top:10px;
 }
 
 .navbar .nav > li {
-margin-top:20px;
+margin-top: 25px;
 }
 
 .navlast {
@@ -37,3 +45,13 @@ margin-top:20px;
 font-size: 16px;
 }
 
+.socialDivide {
+	height: 30px;
+	#gradient > .vertical(@white, #F0F0F0);
+	border-bottom: solid 1px #c0b9c4;
+}
+
+.content {
+	min-height: 300px;
+	background: url(../img/contentbg.png) repeat;
+}
