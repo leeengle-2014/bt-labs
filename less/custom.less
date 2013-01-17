@@ -6,6 +6,9 @@ border-top: 1px solid #9184bd;
 border-bottom: 1px solid #eceaef;
 }
 
+pre {
+	font-size:10px;
+}
 .top {
 	background: url(../img/topbg.png) repeat;
 	hr {margin-bottom: 0px;}
@@ -78,11 +81,13 @@ margin-top: 25px;
 	display: inline-block;
 	padding: 5px 8px;
 	line-height: 1;
+	vertical-align: top;
 }
 
-.fb_iframe_widget {
-top: -8px !important;
-}
+//.fb-follow{
+//position:relative;
+//top: -14px; //adjust to your needs
+//}
 
 //  ## FRONT PAGE FEATURED CONTENT ##
 .hot {
@@ -99,7 +104,7 @@ top: -8px !important;
 	.border-radius(2px);
 	.box-shadow(0 1px 3px rgba(0,0,0,.10)) !important;
 	padding: 2px 2px 5px 2px;
-	// margin: 10px 0;
+	margin: 30px 0 0 0;
 }
 
 .hotfeaturedtext {
@@ -167,8 +172,8 @@ top: -8px !important;
 /* Sidenav for Docs
 -------------------------------------------------- */
 
-.bs-docs-sidenav {
-  width: 228px;
+.docs-nav {
+  width: 215px;
   margin: 30px 0 0;
   padding: 0;
   background-color: #fff;
@@ -179,24 +184,24 @@ top: -8px !important;
      -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
           box-shadow: 0 1px 4px rgba(0,0,0,.065);
 }
-.bs-docs-sidenav > li > a {
+.docs-nav > li > a {
   display: block;
   width: 190px \9;
   margin: 0 0 -1px;
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
 }
-.bs-docs-sidenav > li:first-child > a {
+.docs-nav > li:first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
 }
-.bs-docs-sidenav > li:last-child > a {
+.docs-nav > li:last-child > a {
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
 }
-.bs-docs-sidenav > .active > a {
+.docs-nav > .active > a {
   position: relative;
   z-index: 2;
   padding: 9px 15px;
@@ -207,27 +212,27 @@ top: -8px !important;
           box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
 }
 /* Chevrons */
-.bs-docs-sidenav .icon-chevron-right {
+.docs-nav .icon-chevron-right {
   float: right;
   margin-top: 2px;
   margin-right: -6px;
   opacity: .25;
 }
-.bs-docs-sidenav > li > a:hover {
+.docs-nav > li > a:hover {
   background-color: #f5f5f5;
 }
-.bs-docs-sidenav a:hover .icon-chevron-right {
+.docs-nav a:hover .icon-chevron-right {
   opacity: .5;
 }
-.bs-docs-sidenav .active .icon-chevron-right,
-.bs-docs-sidenav .active a:hover .icon-chevron-right {
+.docs-nav .active .icon-chevron-right,
+.docs-nav .active a:hover .icon-chevron-right {
   background-image: url(../img/glyphicons-halflings-white.png);
   opacity: 1;
 }
-.bs-docs-sidenav.affix {
+.docs-nav.affix {
   top: 40px;
 }
-.bs-docs-sidenav.affix-bottom {
+.docs-nav.affix-bottom {
   position: absolute;
   top: auto;
   bottom: 270px;
