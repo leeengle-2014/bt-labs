@@ -6,6 +6,16 @@ border-top: 1px solid #9184bd;
 border-bottom: 1px solid #eceaef;
 }
 
+h4 {
+	font-weight: @subHeadingWeight;
+	font-size: @subHeadingSize;
+	line-height: @subHeadingLineHeight;
+}
+
+h5 {
+	font-weight: 200;
+	font-size: 16px;
+}
 .gray {
 	border-top: 1px solid @grayLight;
 	border-bottom: 1px solid @white;
@@ -84,8 +94,7 @@ margin-top: 25px;
 .cta { 
 	margin-top: 20px;
 	text-align: center;
-	font-family: helvetica, tahoma;
-	h1 {color:@grayDarker}
+	h1 {color:@grayDarker; font-weight:700;}
 	color:@grayDarker;
 	p {
 		line-height:24px;
@@ -97,6 +106,8 @@ margin-top: 25px;
 .button-cta {
 	width: 70px;
 	margin: 10px 10px 20px 10px;
+	font-family: @headingsFontFamily;
+	font-weight: 400;
 }
 
 .border { 
@@ -213,6 +224,11 @@ border-top:@purple solid 1px;
   	}
 }
 
+.btn-large {
+	font-family: 'Oswald', @sansFontFamily;
+	font-weight: 400;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.65);
+}
 // ### OTHER ###
 #content {
 	min-height: 400px;
