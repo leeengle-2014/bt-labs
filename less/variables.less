@@ -2,7 +2,6 @@
 // Variables
 // --------------------------------------------------
 
-
 // Global values
 // --------------------------------------------------
 
@@ -10,9 +9,9 @@
 // Grays
 // -------------------------
 @black:                 #000;
-@grayDarker:            #222;
+@grayDarker:            #4d4d4d;
 @grayDark:              #333;
-@gray:                  #555;
+@gray:                  #666;
 @grayLight:             #999;
 @grayLighter:           #eee;
 @white:                 #fff;
@@ -25,9 +24,9 @@
 @green:                 #46a546;
 @red:                   #9d261d;
 @yellow:                #ffc40d;
-@orange:                #f89406;
+@orange:                #ea5b54;
 @pink:                  #c3325f;
-@purple:                #7a43b6;
+@purple:                #7665ac;
 
 
 // Scaffolding
@@ -38,7 +37,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @purple;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -49,12 +48,12 @@
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
-@baseFontFamily:        @sansFontFamily;
+@baseFontFamily:        Tahoma, @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
-@headingsFontWeight:    bold;    // instead of browser default, bold
+@headingsFontFamily:    'Oswald', Helvetica, "Helvetica Neue", Arial, sans-serif;
+@headingsFontWeight:    400;
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
 
@@ -65,14 +64,17 @@
 @fontSizeLarge:         @baseFontSize * 1.25; // ~18px
 @fontSizeSmall:         @baseFontSize * 0.85; // ~12px
 @fontSizeMini:          @baseFontSize * 0.75; // ~11px
+@subHeadingSize:		21px;
+@subHeadingLineHeight:	28px;
+@subHeadingWeight:		300;
 
 @paddingLarge:          11px 19px; // 44px
 @paddingSmall:          2px 10px;  // 26px
 @paddingMini:           0 6px;   // 22px
 
-@baseBorderRadius:      4px;
-@borderRadiusLarge:     6px;
-@borderRadiusSmall:     3px;
+@baseBorderRadius:    	0px;
+@borderRadiusLarge:     0px;
+@borderRadiusSmall:     0px;
 
 
 // Tables
@@ -86,13 +88,13 @@
 // -------------------------
 @btnBackground:                     @white;
 @btnBackgroundHighlight:            darken(@white, 10%);
-@btnBorder:                         #bbb;
+@btnBorder:                         #645691;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @purple;
+@btnPrimaryBackgroundHighlight:     darken(@purple, 5%);
 
-@btnInfoBackground:                 #5bc0de;
-@btnInfoBackgroundHighlight:        #2f96b4;
+@btnInfoBackground:                 @orange;
+@btnInfoBackgroundHighlight:        darken(@orange, 5%);
 
 @btnSuccessBackground:              #62c462;
 @btnSuccessBackgroundHighlight:     #51a351;
@@ -186,7 +188,7 @@
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
 @navbarText:                      #777;
-@navbarLinkColor:                 #777;
+@navbarLinkColor:                 darken(@purple, 10%);
 @navbarLinkColorHover:            @grayDark;
 @navbarLinkColorActive:           @gray;
 @navbarLinkBackgroundHover:       transparent;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>BitTorrent Labs</title>
+  <meta name="description" content="">
+  <!-- FOR RESPONSIVE <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../js/prettify.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <!-- FOR RESPONSIVE <link href="bootstrap/css/responsive.css" rel="stylesheet"> -->
+  <script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+  <script src="../js/prettify.js"</script>
+</script>
+</head>
+<body data-spy="scroll" data-target=".docs-bar">
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+<div class="top">
+  <div class="container">
+    <nav class="navbar">
+      <div>
+        <a href="../index.html" class="brand"><img src="../img/logo.png" alt="Labs" width="251" height="50"></a>
+        <ul class="nav pull-right">
+          <li><a href="../experiments.html"><span>EXPERIMENTS</span></a></li>
+          <li><a href="torque.html"><span class="navactive">DEVELOPER TOOLS</span></a></li>
+          <li><a class="navlast" href="../feedback.html/"><span>FEEDBACK</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div> <!-- /container -->
+</div>  <!-- /top -->
+<div class="border"></div>
+<div id="content">
+  <div class="container">
+    <div class="cta">
+      <div class="container">
+        <h1>BitTorrent Torque</h1>
+        <h4>Torque uses the btapp.js library to bring BitTorrent's powerful </br>
+        peer-to-peer technology to the web browser</h4>
+        <a target="_blank" href="https://github.com/bittorrenttorque/btapp" class="btn btn-info btn-large" style="letter-spacing:1px;">Download from GitHub</a>
+        <p style="font-size:10px;">version 0.1.0<p>
+      </div> <!-- /container -->
+    </div> <!-- /cta -->
+    <hr>
+    <nav class="navbar secondnav center">
+      <div class="navinner">
+        <ul class="nav">
+          <li><a href="#"><span class="navactive">INFO</span></a></li>
+          <li><a href="torque/get-started.html"><span>GET STARTED</span></a></li>
+          <li><a href="torque/code-snippets.html"><span>CODE SNIPPETS</span></a></li>
+          <li><a href="torque/api-visualizer.html"><span>API VISUALIZER</span></a></li>
+          <li><a href="torque/torrent-clients.html"><span>TORRENT CLIENTS</span></a></li>
+          <li><a href="torque/videos.html"><span>LIVE CODING VIDEOS</span></a></li>
+        </ul>
+      </div>
+    </nav>
+    <hr>
+
+<!--/// 3 COLUMNS ///-->
+    <div class="row center">
+      <div class="span4">
+        <img src="../img/torque/t-icon1.png">
+        <h4>Built on Backbone</h4>
+        <p>Leans on Backbone's event triggering to make information such as torrent file download rates easy to track.</p>
+      </div>
+      <div class="span4">
+        <img src="../img/torque/t-icon2.png">
+        <h4>Torrents</h4>
+        <p>Use magnet links, torrent urls, and even info hashes to download content to your users computer.</p>
+      </div>
+      <div class="span4">
+        <img src="../img/torque/t-icon3.png">
+        <h4>More than Downloading</h4>
+        <p>Torque can be used to stream torrents, move files to iTunes, interact with the underlying DHT, and more!</p>
+      </div>
+    </div><!-- /row -->
+    <hr class="gray">
+    <div class="hot">
+      <h2>Built with Torque:</h2>
+      <p>More torque-powered apps are coming soon.</p>
+      <ul class="thumbnails">
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a target="_blank" href="http://apps.facebook.com/beamitover"><img src="../img/torque/beamitover.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>BEAM IT OVER</strong>
+                <p>Free unlimited file sharing directly to and from your friends.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a target="_blank" href="http://apps.facebook.com/beamitover"><h5>Try Now</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a target="_blank" href="http://onehash.com/"><img src="../img/torque/1hash.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>ONE HASH</strong>
+                <p>Stream music and videos directly from a torrent swarm to your browse.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a target="_blank" href="http://onehash.com/"><h5>Try Now</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a target="_blank" href="http://torque.bittorrent.com/oneclick/"><img src="../img/torque/1click.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>ONE CLICK CHROME PLUGIN</strong>
+                <p>Turns all torrent links into regular downloads. No torrents to mange.  Just content.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a target="_blank" href="http://torque.bittorrent.com/oneclick/"><h5>Try Now</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a target="_blank" href="http://paddleover.com/"><img src="../img/torque/paddleover.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>PADDLE OVER</strong>
+                <p>Drag files from person to person to share from anyone, to anyone.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a target="_blank" href="http://paddleover.com/"><h5>Try Now</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+        </ul>
+      </div>
+  </div> <!-- /container -->
+</div> <!-- /content -->
+
+<!--/// FOOTER ///-->
+<div id="footer">
+    <a href="">Engineering Blog</a>  |  <a href="">Submit Feedback</a>
+</div>
+
+<!-- /// AFFIX SCROLL CODE /// -->
+<script>
+  $('.docs-nav').affix({
+    offset: {
+      top: 360
+    , bottom: 270
+    }
+  })
+</script>
+
+<!-- /// GOOGLE ANALYTICS /// -->
+<script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
+
+
