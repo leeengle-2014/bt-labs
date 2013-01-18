@@ -1,9 +1,26 @@
 // CUSTOM CSS
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push, #footer {
+	height: 60px;
+}
+
 hr {
-margin: 20px 0;
-border: 0;
-border-top: 1px solid #9184bd;
-border-bottom: 1px solid #eceaef;
+	margin: 20px 0;
+	border: 0;
+	border-top: 1px solid #9184bd;
+	border-bottom: 1px solid #eceaef;
 }
 
 h4 {
@@ -16,13 +33,16 @@ h5 {
 	font-weight: 200;
 	font-size: 16px;
 }
+
 .gray {
 	border-top: 1px solid @grayLight;
 	border-bottom: 1px solid @white;
 }
+
 pre {
 	font-size:10px;
 }
+
 .top {
 	background: url(../img/topbg.png) repeat;
 	hr {margin-bottom: 0px;}
@@ -30,11 +50,11 @@ pre {
 
 // ### NAV BAR ###
 .navbar {
-	height: 55px;
+	height: 50px;
 }
 
 .navbar .nav > li {
-margin-top: 25px;
+	margin-top: 15px;
 }
 
 .navlast {
@@ -46,7 +66,7 @@ margin-top: 25px;
 }
 
 .nav > li > a > span {
-	padding-bottom: 18px;
+	padding-bottom: 23px;
 }
 
 .nav > li > a > span:hover{
@@ -62,11 +82,22 @@ margin-top: 25px;
 }
 
 .secondnav {
-	margin-top: -30px;
 	font-size: 14px;
+	height: none;
 	span {
 		font-size:14px;
 	}
+	hr {
+		margin: 0;
+	}
+	span {
+		padding-bottom: 9px !important;
+	}
+}
+
+.secondnav li {
+	padding-top: 0;
+	margin-top: 0 !important;
 }
 
 .center.navbar .nav,
@@ -92,7 +123,7 @@ margin-top: 25px;
 
 // ### TOP CTA ###
 .cta { 
-	margin-top: 20px;
+	padding: 15px 0 25px;
 	text-align: center;
 	h1 {color:@grayDarker; font-weight:700;}
 	color:@grayDarker;
@@ -103,9 +134,13 @@ margin-top: 25px;
 	}
 }
 
+.cta-index {
+	border-bottom: 1px solid @grayLight;
+}
+
 .button-cta {
 	width: 70px;
-	margin: 10px 10px 20px 10px;
+	margin: 10px 10px 0px 10px;
 	font-family: @headingsFontFamily;
 	font-weight: 400;
 }
@@ -241,7 +276,6 @@ border-top:@purple solid 1px;
 }
 
 #footer {
-	min-height: 50px;
 	border-top: 1px solid #c0b9c4;
 	background: @white;
 	text-align: center;

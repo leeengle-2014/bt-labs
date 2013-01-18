@@ -23,119 +23,109 @@
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-<div class="top">
-  <div class="container">
-    <nav class="navbar">
-      <div>
-        <a href="index.html" class="brand"><img src="img/logo.png" alt="BT Labs" width="251" height="50"></a>
-        <ul class="nav pull-right">
-          <li><div class="navdivider"></div><a href="experiments.html"><span>EXPERIMENTS</span></a></li>
-          <li><div class="navdivider"></div><a href="developers/torque.html"><span>DEVELOPER TOOLS</span></a></li>
-          <li><div class="navdivider"></div><a class="navlast" href="feedback.html"><span>FEEDBACK</span></a></li>
+<div id="wrap">
+  <div class="top">
+    <div class="container">
+      <nav class="navbar">
+        <div>
+          <a href="index.html" class="brand"><img src="img/logo.png" alt="BT Labs" width="251" height="50"></a>
+          <ul class="nav pull-right">
+            <li><div class="navdivider"></div><a href="experiments.html"><span>EXPERIMENTS</span></a></li>
+            <li><div class="navdivider"></div><a href="developers/torque.html"><span>DEVELOPER TOOLS</span></a></li>
+            <li><div class="navdivider"></div><a class="navlast" href="feedback.html"><span>FEEDBACK</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    <hr>
+    </div> <!-- /container -->
+    <div class="cta cta-index">
+      <div class="container">
+        <h1>Welcome to the Lab</h1>
+        <h4>This is our test kitchen. Our not-so-secret-fort. </br>
+        A place where you can play with our experiments, and create your own.</h4>
+        <a href="experiments.html" class="btn btn-primary btn-large button-cta" style="letter-spacing:2px;">Play</a>
+        <a href="developers/torque.html" class="btn btn-info btn-large button-cta" style="letter-spacing:2px;">Create</a>
+      </div> <!-- /container -->
+    </div> <!-- /cta -->
+  </div> <!-- /top -->
+
+  <!--/// MAIN CONTENT ///-->
+  <div id="content">
+    <div class="container">
+      <div class="hot">
+        <h2>Featured Experiments:</h2>
+        <p>Click <a href="experiments.html">here</a> for more.</p>
+        <ul class="thumbnails">
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a href="experiments/bittorrent-live.html"><img src="img/experiments/live.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>BITTORRENT LIVE</strong>
+                <p>Broadcast live web streams, without costs or network delays.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a href="experiments/bittorrent-live.html"><h5>Learn More</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a href="http://apps.facebook.com/beamitover"><img src="img/experiments/surf.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>BITTORRENT SURF</strong>
+                <p>Discover and download torrents from inside your Chrome browser.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a href="http://apps.facebook.com/beamitover"><h5>Learn More</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a href="experiments/sync.html"><img src="http://placehold.it/274x128" /></a>
+              <div class="hotfeaturedtext">
+                <strong>BITTORRENT SYNC</strong>
+                <p>Sync files between computers, via secure, distributed technology.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a href="experiments/sync.html"><h5>Learn More</h5></a>
+              </div>
+            </div>
+          </li>
+          <!--///////END FEATURED BOX///////-->
+          <!--/////// FEATURED BOX ///////-->
+          <li class="span3">
+            <div class="thumbnail featuredbox">
+              <a target="_blank" href="http://apps.facebook.com/beamitover"><img src="img/torque/beamitover.png" /></a>
+              <div class="hotfeaturedtext">
+                <strong>BEAM IT OVER</strong>
+                <p>Share large files directly with friends over Facebook.</p>
+              </div> <!--/featuredtext-->
+              <div class="hotfeaturedbutton"> 
+                <hr>
+                <a target="_blank" href="http://apps.facebook.com/beamitover"><h5>Try Now</h5></a>
+              </div>
+            </div>
+          </li>
         </ul>
-      </div>
-    </nav>
-  <hr>
-  </div> <!-- /container -->
-  <div class="cta">
-    <div class="container">
-      <h1>Welcome to the Lab</h1>
-      <h4>This is our test kitchen. Our not-so-secret-fort. </br>
-      A place where you can play with our experiments, and create your own.</h4>
-      <a href="experiments.html" class="btn btn-primary btn-large button-cta" style="letter-spacing:2px;">Play</a>
-      <a href="developers/torque.html" class="btn btn-info btn-large button-cta" style="letter-spacing:2px;">Create</a>
+        <!--///////END FEATURED BOX///////-->        
+      </div> <!-- /hot -->
     </div> <!-- /container -->
-  </div> <!-- /cta -->
+  </div> <!-- /content -->
 
-<!--/// MAIN SOCIAL BAR ///-->
-  <div class="socialDivide">
-    <div class="container">
-      <ul class="social-buttons">
-        <li class="follow-btn">
-          <a href="https://twitter.com/bittorrent" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </li>
-      </ul>
-    </div> <!-- /container -->
-  </div> <!-- /socialDivide -->
-</div> <!-- /top -->
-
-<!--/// MAIN CONTENT ///-->
-<div id="content">
-  <div class="container">
-    <div class="hot">
-      <h2>Featured Experiments:</h2>
-      <p>Click <a href="experiments.html">here</a> for more.</p>
-      <ul class="thumbnails">
-        <!--/////// FEATURED BOX ///////-->
-        <li class="span3">
-          <div class="thumbnail featuredbox">
-            <a href="experiments/bittorrent-live.html"><img src="img/experiments/live.png" /></a>
-            <div class="hotfeaturedtext">
-              <strong>BITTORRENT LIVE</strong>
-              <p>Broadcast live web streams, without costs or network delays.</p>
-            </div> <!--/featuredtext-->
-            <div class="hotfeaturedbutton"> 
-              <hr>
-              <a href="experiments/bittorrent-live.html"><h5>Learn More</h5></a>
-            </div>
-          </div>
-        </li>
-        <!--///////END FEATURED BOX///////-->
-        <!--/////// FEATURED BOX ///////-->
-        <li class="span3">
-          <div class="thumbnail featuredbox">
-            <a href="http://apps.facebook.com/beamitover"><img src="img/experiments/surf.png" /></a>
-            <div class="hotfeaturedtext">
-              <strong>BITTORRENT SURF</strong>
-              <p>Discover and download torrents from inside your Chrome browser.</p>
-            </div> <!--/featuredtext-->
-            <div class="hotfeaturedbutton"> 
-              <hr>
-              <a href="http://apps.facebook.com/beamitover"><h5>Learn More</h5></a>
-            </div>
-          </div>
-        </li>
-        <!--///////END FEATURED BOX///////-->
-        <!--/////// FEATURED BOX ///////-->
-        <li class="span3">
-          <div class="thumbnail featuredbox">
-            <a href="experiments/sync.html"><img src="http://placehold.it/274x128" /></a>
-            <div class="hotfeaturedtext">
-              <strong>BITTORRENT SYNC</strong>
-              <p>Sync files between computers, via secure, distributed technology.</p>
-            </div> <!--/featuredtext-->
-            <div class="hotfeaturedbutton"> 
-              <hr>
-              <a href="experiments/sync.html"><h5>Learn More</h5></a>
-            </div>
-          </div>
-        </li>
-        <!--///////END FEATURED BOX///////-->
-        <!--/////// FEATURED BOX ///////-->
-        <li class="span3">
-          <div class="thumbnail featuredbox">
-            <a target="_blank" href="http://apps.facebook.com/beamitover"><img src="img/torque/beamitover.png" /></a>
-            <div class="hotfeaturedtext">
-              <strong>BEAM IT OVER</strong>
-              <p>Share large files directly with friends over Facebook.</p>
-            </div> <!--/featuredtext-->
-            <div class="hotfeaturedbutton"> 
-              <hr>
-              <a target="_blank" href="http://apps.facebook.com/beamitover"><h5>Try Now</h5></a>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <!--///////END FEATURED BOX///////-->        
-    </div> <!-- /hot -->
-  </div> <!-- /container -->
-</div> <!-- /content -->
-
-<!--/// FOOTER ///-->
-<div id="footer">
-    <a href="">Engineering Blog</a>  |  <a href="">Submit Feedback</a>
-</div>
+  <!--/// FOOTER ///-->
+  <div id="footer">
+      <a href="">Engineering Blog</a>  |  <a href="">Submit Feedback</a>
+  </div> <!-- /footer -->
+</div> <!-- /wrap -->
 
 <!-- /// GOOGLE ANALYTICS /// -->
 <script>

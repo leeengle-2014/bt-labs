@@ -24,63 +24,64 @@
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-<div class="top">
-  <div class="container">
-    <nav class="navbar">
-      <div>
-        <a href="../../index.html" class="brand"><img src="../../img/logo.png" alt="Labs" width="251" height="50"></a>
-        <ul class="nav pull-right">
-          <li><a href="../../experiments.html"><span>EXPERIMENTS</span></a></li>
-          <li><a href="../torque.html"><span>DEVELOPER TOOLS</span></a></li>
-          <li><a class="navlast" href="../../feedback.html/"><span>FEEDBACK</span></a></li>
-        </ul>
+<div id="wrap"> 
+  <div class="top">
+    <div class="container">
+      <nav class="navbar">
+        <div>
+          <a href="../../index.html" class="brand"><img src="../../img/logo.png" alt="Labs" width="251" height="50"></a>
+          <ul class="nav pull-right">
+            <li><a href="../../experiments.html"><span>EXPERIMENTS</span></a></li>
+            <li><a href="../torque.html"><span>DEVELOPER TOOLS</span></a></li>
+            <li><a class="navlast" href="../../feedback.html/"><span>FEEDBACK</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div> <!-- /container -->
+  </div>  <!-- /top -->
+  <div class="border"></div>
+  <div id="content">
+    <div class="container">
+      <div class="cta">
+        <div class="container">
+          <h1>BitTorrent Torque</h1>
+          <h4>Torque uses the btapp.js library to bring BitTorrent's powerful </br>
+            peer-to-peer technology to the web browser</h4>
+          <a target="_blank" href="https://github.com/bittorrenttorque/btapp" class="btn btn-info btn-large" style="letter-spacing:1px;">Download from GitHub</a>
+          <p style="font-size:10px;">version 0.1.0<p>
+        </div> <!-- /container -->
+      </div> <!-- /cta -->
+      <hr>
+      <nav class="navbar secondnav center">
+        <div class="navinner">
+          <ul class="nav">
+            <li><a href="../torque.html"><span>INFO</span></a></li>
+            <li><a href="get-started.html"><span>GET STARTED</span></a></li>
+            <li><a href="code-snippets.html"><span>CODE SNIPPETS</span></a></li>
+            <li><a href="#"><span class="navactive">API VISUALIZER</span></a></li>
+            <li><a href="torrent-clients.html"><span>TORRENT CLIENTS</span></a></li>
+            <li><a href="videos.html"><span>LIVE CODING VIDEOS</span></a></li>
+          </ul>
+        </div>
+      </nav>
+      <hr>
+
+  <!--/// MAIN CONTENT ///-->
+
+  <!--/// DOC SIDE NAVIGATION ///-->
+      <div class="center">
+        <h2>Api Visualizer</h2>
+        <p class="lead">Connect to your underlying Torque torrent client and expose the api, <br>with all the data and remote function calls available in real time.</p>
+        <iframe style="width:100%;height: 800px" src="http://bittorrenttorque.github.com/visualizer" frameborder="0"></iframe>
       </div>
-    </nav>
-  </div> <!-- /container -->
-</div>  <!-- /top -->
-<div class="border"></div>
-<div id="content">
-  <div class="container">
-    <div class="cta">
-      <div class="container">
-        <h1>BitTorrent Torque</h1>
-        <h4>Torque uses the btapp.js library to bring BitTorrent's powerful </br>
-          peer-to-peer technology to the web browser</h4>
-        <a target="_blank" href="https://github.com/bittorrenttorque/btapp" class="btn btn-info btn-large" style="letter-spacing:1px;">Download from GitHub</a>
-        <p style="font-size:10px;">version 0.1.0<p>
-      </div> <!-- /container -->
-    </div> <!-- /cta -->
-    <hr>
-    <nav class="navbar secondnav center">
-      <div class="navinner">
-        <ul class="nav">
-          <li><a href="../torque.html"><span>INFO</span></a></li>
-          <li><a href="get-started.html"><span>GET STARTED</span></a></li>
-          <li><a href="code-snippets.html"><span>CODE SNIPPETS</span></a></li>
-          <li><a href="#"><span class="navactive">API VISUALIZER</span></a></li>
-          <li><a href="torrent-clients.html"><span>TORRENT CLIENTS</span></a></li>
-          <li><a href="videos.html"><span>LIVE CODING VIDEOS</span></a></li>
-        </ul>
-      </div>
-    </nav>
-    <hr>
+    </div> <!-- /container -->
+  </div> <!-- /content -->
 
-<!--/// MAIN CONTENT ///-->
-
-<!--/// DOC SIDE NAVIGATION ///-->
-    <div class="center">
-      <h2>Api Visualizer</h2>
-      <p class="lead">Connect to your underlying Torque torrent client and expose the api, <br>with all the data and remote function calls available in real time.</p>
-      <iframe style="width:100%;height: 800px" src="http://bittorrenttorque.github.com/visualizer" frameborder="0"></iframe>
-    </div>
-  </div> <!-- /container -->
-</div> <!-- /content -->
-
-<!--/// FOOTER ///-->
-<div id="footer">
-    <a href="">Engineering Blog</a>  |  <a href="">Submit Feedback</a>
-</div>
-
+  <!--/// FOOTER ///-->
+  <div id="footer">
+      <a href="">Engineering Blog</a>  |  <a href="">Submit Feedback</a>
+  </div> <!-- /footer -->
+</div> <!-- /wrap -->
 <!-- /// AFFIX SCROLL CODE /// -->
 <script>
   $('.docs-nav').affix({
