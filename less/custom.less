@@ -3,6 +3,12 @@ html, body {
 	height: 100%;
 }
 
+body {
+	background: #000 url(../img/contentbg.png) repeat;
+
+}
+
+// FOR STICKY FOOTER
 #wrap {
 	min-height: 100%;
 	height: auto !important;
@@ -12,8 +18,15 @@ html, body {
 }
 
 /* Set the fixed height of the footer here */
-#push, #footer {
+#push {
 	height: 60px;
+}
+
+/* Make sure the 3 numbers below equal the #push height */
+#footer { 
+	height: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 hr {
@@ -44,7 +57,6 @@ pre {
 }
 
 .top {
-	background: url(../img/topbg.png) repeat;
 	hr {margin-bottom: 0px;}
 }
 
@@ -134,6 +146,11 @@ pre {
 	}
 }
 
+.cta-details {
+	border-bottom: 1px solid @grayLight;
+	margin-bottom: 20px;
+}
+
 .cta-index {
 	border-bottom: 1px solid @grayLight;
 }
@@ -206,7 +223,7 @@ border-top:@purple solid 1px;
 	font-size: 12px;
 	line-height: 17px;
 	color: @gray;
-	strong {color: @black;}
+	strong {color: @grayDarker;}
 	hr {
 		margin: 10px 0;
 		border: 0;
@@ -266,20 +283,14 @@ border-top:@purple solid 1px;
 }
 // ### OTHER ###
 #content {
-	min-height: 400px;
 	background: url(../img/contentbg.png) repeat;
-	padding-bottom: 50px;
-}
-
-.short {
-	min-height:600px !important;
+	margin-bottom: 30px;
 }
 
 #footer {
 	border-top: 1px solid #c0b9c4;
 	background: @white;
 	text-align: center;
-	padding: 30px 0 0 0;
 }
 
 /* Sidenav for Docs
