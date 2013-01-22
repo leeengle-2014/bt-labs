@@ -14,19 +14,23 @@ body {
 	height: auto !important;
 	height: 100%;
 /* Negative indent footer by it's height */
-	margin: 0 auto -60px;
+	margin: 0 auto -140px;
 }
 
 /* Set the fixed height of the footer here */
 #push {
-	height: 60px;
+	height: 140px;
 }
 
 /* Make sure the 3 numbers below equal the #push height */
 #footer { 
-	height: 20px;
+	height: 100px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	hr {
+		margin: 10px 0;
+		border-top: dashed 1px #CACACA;
+	}
 }
 
 hr {
@@ -292,6 +296,12 @@ border-top:@purple solid 1px;
 	border-top: 1px solid #c0b9c4;
 	background: @white;
 	text-align: center;
+}
+
+.footerhr {
+	width: 400px;
+	text-align:center;
+	margin: 0 auto;
 }
 
 /* Sidenav for Docs
