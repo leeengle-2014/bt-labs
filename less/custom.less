@@ -30,6 +30,7 @@ body {
 	hr {
 		margin: 10px 0;
 		border-top: dashed 1px #CACACA;
+		border-bottom: none;
 	}
 }
 
@@ -38,6 +39,10 @@ hr {
 	border: 0;
 	border-top: 1px solid #9184bd;
 	border-bottom: 1px solid #eceaef;
+}
+
+h2 {
+	font-weight: 200;
 }
 
 h4 {
@@ -79,7 +84,7 @@ pre {
 }
 
 .nav > li > a {
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .nav > li > a > span {
@@ -99,7 +104,7 @@ pre {
 }
 
 .secondnav {
-	font-size: 14px;
+	font-size: 15px;
 	height: none;
 	span {
 		font-size:14px;
@@ -140,13 +145,13 @@ pre {
 
 // ### TOP CTA ###
 .cta { 
-	padding: 15px 0 25px;
+	padding: 15px 0 15px;
 	text-align: center;
 	h1 {color:@grayDarker; font-weight:700;}
 	color:@grayDarker;
 	p {
 		line-height:24px;
-		font-size:22px;
+		font-size: 14px;
 		font-weight:300;
 	}
 }
@@ -162,7 +167,7 @@ pre {
 
 .button-cta {
 	width: 70px;
-	margin: 10px 10px 0px 10px;
+	margin: 10px;
 	font-family: @headingsFontFamily;
 	font-weight: 400;
 }
@@ -170,6 +175,8 @@ pre {
 .border { 
 border-top:@purple solid 1px;
 }
+
+
 // ### SOCIAL BAR ###
 .socialDivide {
 	height: 35px;
@@ -204,8 +211,9 @@ border-top:@purple solid 1px;
 	text-align:center;
 	margin-top: 20px;
 	line-height: 5px;
-	h2 {color:@grayDarker;font-weight:400;}
+	h2 {color:@grayDarker;}
 	ul {margin-top:30px;}
+	font-size: 16px;
 }
 
 .featuredbox {
@@ -219,13 +227,16 @@ border-top:@purple solid 1px;
 
 .hot ul {
 	margin-top: 30px;
+	p {
+		font-size: 14px;
+	}
 }
 
 .hotfeaturedtext {
 	text-align: left;
 	height: 90px;
 	margin: 8px 6px 5px 6px;
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 17px;
 	color: @gray;
 	strong {color: @grayDarker;}

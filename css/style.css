@@ -5143,6 +5143,7 @@ body {
 #footer hr {
   margin: 10px 0;
   border-top: dashed 1px #CACACA;
+  border-bottom: none;
 }
 hr {
   margin: 20px 0;
@@ -5150,10 +5151,13 @@ hr {
   border-top: 1px solid #9184bd;
   border-bottom: 1px solid #eceaef;
 }
+h2 {
+  font-weight: 200;
+}
 h4 {
   font-weight: 300;
   font-size: 21px;
-  line-height: 28px;
+  line-height: 23px;
 }
 h5 {
   font-weight: 200;
@@ -5182,7 +5186,7 @@ pre {
   padding-right: 0 !important;
 }
 .nav > li > a {
-  font-size: 16px;
+  font-size: 15px;
 }
 .nav > li > a > span {
   padding-bottom: 23px;
@@ -5200,7 +5204,7 @@ pre {
   border-bottom: 3px solid #7665ac;
 }
 .secondnav {
-  font-size: 14px;
+  font-size: 15px;
   height: none;
 }
 .secondnav span {
@@ -5238,7 +5242,7 @@ pre {
   padding-left: 2px;
 }
 .cta {
-  padding: 15px 0 25px;
+  padding: 15px 0 15px;
   text-align: center;
   color: #4d4d4d;
 }
@@ -5248,7 +5252,7 @@ pre {
 }
 .cta p {
   line-height: 24px;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 300;
 }
 .cta-details {
@@ -5260,7 +5264,7 @@ pre {
 }
 .button-cta {
   width: 70px;
-  margin: 10px 10px 0px 10px;
+  margin: 10px;
   font-family: 'Oswald', Helvetica, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
@@ -5298,10 +5302,10 @@ pre {
   text-align: center;
   margin-top: 20px;
   line-height: 5px;
+  font-size: 16px;
 }
 .hot h2 {
   color: #4d4d4d;
-  font-weight: 400;
 }
 .hot ul {
   margin-top: 30px;
@@ -5321,11 +5325,14 @@ pre {
 .hot ul {
   margin-top: 30px;
 }
+.hot ul p {
+  font-size: 14px;
+}
 .hotfeaturedtext {
   text-align: left;
   height: 90px;
   margin: 8px 6px 5px 6px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 17px;
   color: #666666;
 }
