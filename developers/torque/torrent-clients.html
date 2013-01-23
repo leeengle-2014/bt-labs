@@ -17,7 +17,7 @@
   <script src="../../js/jquery.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
   <script src="../../js/custom.js"></script>
-  <script src="../../js/prettify.js"</script>
+  <script src="../../js/prettify.js"></script>
 </script>
 </head>
 <body data-spy="scroll" data-target=".docs-bar">
@@ -85,17 +85,17 @@
            <!-- Global Bootstrap settings
           ================================================== -->
           <section id="compatibility">
-            <div class="page-header">
-              <h1>Api Compatibility</h1>
+            <div class="page-header top-header">
+              <h2>Api Compatibility</h2>
+            </div>
               <p>By default, the api will try to use Torque, a headless torrent client. This means the <i>connect</i> call will facilitate the installation of a browser plugin, and the underlying torrent client if it isn't already available. This is similar to the way that browsers will handle the installation of Flash if it isn't available, freeing the Flash developer to assume that the functionality is available.</p>
 
-              Most web apps that use <i>btapp.js</i> will probably want to use the headless Torque client. However, the api is also already available in the alpha branches of <strong>BitTorrent</strong> and <a href="http://download.utorrent.com/latest/uTorrent-alpha.exe"><strong>uTorrent</strong> (version 3.3 and later)</a>, which is available via <a href="http://forum.utorrent.com/viewtopic.php?id=118544">the uTorrent forums.</a>
-            </div>
+              <p>Most web apps that use <i>btapp.js</i> will probably want to use the headless Torque client. However, the api is also already available in the alpha branches of <strong>BitTorrent</strong> and <a href="http://download.utorrent.com/latest/uTorrent-alpha.exe"><strong>uTorrent</strong> (version 3.3 and later)</a>, which is available via <a href="http://forum.utorrent.com/viewtopic.php?id=118544">the uTorrent forums.</a></p>
           </section>
 
           <section id="plugin">
             <div class="page-header">
-              <h1>Browser Plugin</h1>
+              <h2>Browser Plugin</h2>
             </div>
             <p>
               When calling <i>connect</i> for the first time, the user will be prompted to install the browser plugin. The browser plugin is responsible for making sure that the underlying torrent client is running when needed. This is usually desired when using the <i>Torque</i> client, however it may not be necessary if you're connecting to say, <i>&micro</i>Torrent.
@@ -109,7 +109,7 @@
 
           <section id="pairing">
             <div class="page-header">
-              <h1>Pairing</h1>
+              <h2>Pairing</h2>
             </div>
             <p>Pairing is a security measure to make sure that websites you visit must be granted user approval before accessing the contents of your torrent client. This is handled by the <i>connect</i> call, and only needs to be specified if you don't want to use the browser plugin.</p>
 
@@ -121,7 +121,7 @@
 
           <section id="torque">
             <div class="page-header">
-              <h1>Torque</h1>
+              <h2>Torque</h2>
             </div>
             The default product that the library connects to is <i>Torque</i>, so there is no need to specify anything.
   <pre class="prettyprint linenums">
@@ -140,7 +140,7 @@
 
           <section id="utorrent">
             <div class="page-header">
-              <h1>uTorrent</h1>
+              <h2>uTorrent</h2>
             </div>
             When using <i>btapp.js</i> to connect to a uTorrent client running on your user's machine, you may not want to 
   <pre class="prettyprint linenums">
@@ -155,7 +155,7 @@
 
           <section id="bittorrent">
             <div class="page-header">
-              <h1>BitTorrent</h1>
+              <h2>BitTorrent</h2>
             </div>
   <pre class="prettyprint linenums">
   var btapp = new Btapp;
@@ -189,7 +189,7 @@
 <script>
   $('.docs-nav').affix({
     offset: {
-      top: 360
+      top: 340
     , bottom: 270
     }
   })

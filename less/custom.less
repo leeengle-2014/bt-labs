@@ -8,32 +8,6 @@ body {
 
 }
 
-// FOR STICKY FOOTER
-#wrap {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-/* Negative indent footer by it's height */
-	margin: 0 auto -140px;
-}
-
-/* Set the fixed height of the footer here */
-#push {
-	height: 140px;
-}
-
-/* Make sure the 3 numbers below equal the #push height */
-#footer { 
-	height: 100px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	hr {
-		margin: 10px 0;
-		border-top: dashed 1px #CACACA;
-		border-bottom: none;
-	}
-}
-
 hr {
 	margin: 20px 0;
 	border: 0;
@@ -41,18 +15,16 @@ hr {
 	border-bottom: 1px solid #eceaef;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 }
 
 h4 {
-	font-weight: @subHeadingWeight;
 	font-size: @subHeadingSize;
 	line-height: @subHeadingLineHeight;
 }
 
 h5 {
-	font-weight: 200;
 	font-size: 16px;
 }
 
@@ -68,6 +40,11 @@ pre {
 .top {
 	hr {margin-bottom: 0px;}
 	background: url(../img/topbg.png) repeat;
+}
+
+#content {
+	background: url(../img/contentbg.png) repeat;
+	margin-bottom: 30px;
 }
 
 // ### NAV BAR ###
@@ -211,7 +188,6 @@ border-top:@purple solid 1px;
 	text-align:center;
 	margin-top: 20px;
 	line-height: 5px;
-	h2 {color:@grayDarker;}
 	ul {margin-top:30px;}
 	font-size: 16px;
 }
@@ -255,12 +231,26 @@ border-top:@purple solid 1px;
 		border: 0;
 		border-top:1px solid #d9d9d9;
 	}
-
-
 }
 
 .hotfeatured {
 	margin-top: 30px;
+}
+
+#content .page-header {
+    border-bottom: 1px solid #B8B8B8;
+    margin: 35px 0 15px;
+    padding-bottom: 5px;
+    h2 {
+    	line-height: 32px;
+    }
+}
+
+#content .top-header {
+	margin-top: 0px;
+	h2 {
+		margin-top: 0px;
+	}
 }
 
 //  ### CUSTOM BUTTONS ###
@@ -297,11 +287,9 @@ border-top:@purple solid 1px;
 	font-weight: 400;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.65);
 }
-// ### OTHER ###
-#content {
-	background: url(../img/contentbg.png) repeat;
-	margin-bottom: 30px;
-}
+
+
+//  ### FOOTER ###
 
 #footer {
 	border-top: 1px solid #c0b9c4;
@@ -315,12 +303,38 @@ border-top:@purple solid 1px;
 	margin: 0 auto;
 }
 
+// FOR STICKY FOOTER
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+/* Negative indent footer by it's height */
+	margin: 0 auto -140px;
+}
+
+/* Set the fixed height of the footer here */
+#push {
+	height: 140px;
+}
+
+/* Make sure the 3 numbers below equal the #push height */
+#footer { 
+	height: 100px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	hr {
+		margin: 10px 0;
+		border-top: dashed 1px #CACACA;
+		border-bottom: none;
+	}
+}
+
 /* Sidenav for Docs
 -------------------------------------------------- */
 
 .docs-nav {
   width: 215px;
-  margin: 30px 0 0;
+  margin: 0;
   padding: 0;
   background-color: #fff;
   -webkit-border-radius: 6px;
@@ -376,7 +390,7 @@ border-top:@purple solid 1px;
   opacity: 1;
 }
 .docs-nav.affix {
-  top: 40px;
+  top: 20px;
 }
 .docs-nav.affix-bottom {
   position: absolute;

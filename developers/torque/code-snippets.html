@@ -17,7 +17,7 @@
   <script src="../../js/jquery.js"></script>
   <script src="../../js/bootstrap.min.js"></script>
   <script src="../../js/custom.js"></script>
-  <script src="../../js/prettify.js"</script>
+  <script src="../../js/prettify.js"></script>
 </script>
 </head>
 <body data-spy="scroll" data-target=".docs-bar">
@@ -93,8 +93,8 @@
            <!-- Global Bootstrap settings
           ================================================== -->
           <section id="warning">
-            <div class="page-header">
-              <h1>Asynchronous Warning:</h1>
+            <div class="page-header top-header">
+              <h2>Asynchronous Warning:</h2>
             </div>
             <p>Every bit of state, or function, is available <strong>only</strong> once it has been bubbled up from the underlying Torque torrent client. Which is to say you can't blindly do the following:</p>
             <h5>DON'T</h5>
@@ -108,13 +108,8 @@
     torrent.remove();
   });
   </pre>
-            <p>
-              The code would work fine in most contexts, but the <i>torrent</i> attribute (the list of torrents, not a specific torrent) doesn't exist until you've connected to the torrent client and it has exposed its list of torrents to your btapp object.
-            </p>
-            <br>
-            <p>
-              Instead, we rely on Backbone's event handling to do this this safely (and get the expected behavior)
-            </p>
+            <p>The code would work fine in most contexts, but the <i>torrent</i> attribute (the list of torrents, not a specific torrent) doesn't exist until you've connected to the torrent client and it has exposed its list of torrents to your btapp object.</p>
+            <p>Instead, we rely on Backbone's event handling to do this this safely (and get the expected behavior)</p>
             <h5>DO</h5>
   <pre class="prettyprint linenums">
   var btapp = new Btapp();
@@ -128,19 +123,20 @@
     });
   });
   </pre>
-            <p>
-              Depending on you app, you may not care about ensuring the functionality is available, but it is important to avoid referencing attributes/functions of undefined values.
-              <br><br>
-              The complexity of protecting against these timing issues grows exponentially as you access children of children attributes, so make sure to take advantage of <a href="https://github.com/bittorrenttorque/backbrace">Backbrace</a> (included by default in the template project). 
+            <p>Depending on you app, you may not care about ensuring the functionality is available, but it is important to avoid referencing attributes/functions of undefined values.
             </p>
-            <h5>The following api examples will be kept as simple as possible, so will not necessarly avoid these timing issues. Examples that are written carefully to avoid these issues will be denoted with a <strong>SUPER TIMING SAFE!</strong></h5>
+            <p>The complexity of protecting against these timing issues grows exponentially as you access children of children attributes, so make sure to take advantage of <a href="https://github.com/bittorrenttorque/backbrace">Backbrace</a> (included by default in the template project). 
+            </p>
+            <p><strong>The following api examples will be kept as simple as possible, so will not necessarly avoid these timing issues. Examples that are written carefully to avoid these issues will be denoted with a SUPER TIMING SAFE!</strong></p>
           </section>
           <section id="torrents">
             <div class="page-header">
-              <h1>Torrents</h1>
-              <p>The list of torrents loaded in the Torque torrent client are represented in a <i>Backbone.Collection</i> that is accessible via <i>btapp.get('torrent')</i></p>
-              <p>Adding torrents can be done by using the function <i>btapp.get('add').torrent</i></p>
+              <h2>Torrents</h2>
             </div>
+            <p>The list of torrents loaded in the Torque torrent client are represented in a <i>Backbone.Collection</i> that is accessible via <i>btapp.get('torrent')</i>
+            </p>
+            <p>Adding torrents can be done by using the function <i>btapp.get('add').torrent</i>
+            </p>
           </section>
           <section id="adding-torrent">
             <h3>Adding a torrent</h3>
@@ -148,7 +144,8 @@
   var url = 'http://vodo.net/media/torrents/Deadside.Pilot.2012.720p.x264-VODO.torrent';
   btapp.get('add').torrent(url);
   </pre>
-            <p><strong>Callback?</strong> If you'd like to know when the torrent has been added, you can do so by passing in an object with <i>url</i> and <i>callback</i> keys.</p>
+            <p><strong>Callback?</strong> If you'd like to know when the torrent has been added, you can do so by passing in an object with <i>url</i> and <i>callback</i> keys.
+            </p>
   <pre class="prettyprint linenums">
   var magnet = 'magnet:?xt=urn:btih:f0d665f264393a7dafd7d05d739e1097df652e80&dn=The.Yes.Men.Fix.The.World';
 
@@ -172,7 +169,6 @@
   });
   </pre>
           </section>
-          <br>
           <section id="removing-torrent">
             <h3>Removing torrents</h3>
             <p>These torrents all suck. Lets get rid of them all.</p>
@@ -182,7 +178,6 @@
   });
   </pre>
           </section>
-          <br>
           <section id="torrent-properties">
             <h3>Torrent download percentage</h3>
             <p>You may be interested in displaying the download percentage of a torrent that you add. This is simple, provided we are using <a href="https://github.com/bittorrenttorque/backbrace">Backbrace</a>. Lets add a torrent file from a url, then be very verbose about how much has downloaded.
@@ -220,7 +215,7 @@
 
           <section id="files">
             <div class="page-header">
-              <h1>Torrent Files</h1>
+              <h2>Torrent Files</h2>
             </div>
             <p>Torrents are wrappers around a bundle of files. These files, once fully downloaded are like any other download. The file is in some folder on your computer, and can be interacted with as such. Oftentimes the content of torrents is skewed towards music and video, so there are a few media specific functions that might please your users.</p>
             <br>
@@ -305,7 +300,7 @@
           </section>
           <section id="trackers">
             <div class="page-header">
-              <h1>Trackers</h1>
+              <h2>Trackers</h2>
             </div>
             <p>Trackers are used to augment the dht in finding peers for a specific torrent. However, they generally also support <a href="http://wiki.theory.org/BitTorrentSpecification#Tracker_.27scrape.27_Convention">scrape requests.</a> These can yield information on how many seeders, leachers, the total number of completed downloads, and optionally the name of the torrent.
             </p>
@@ -345,7 +340,7 @@
   </pre>
           </section>  
           <section id="comments">
-            <h1>Questions?</h1>
+            <h2>Questions?</h2>
             <p>We're happy to help!  Shoot us an email at <a href="mailto:torque@bittorrent.com">torque@bittorrent.com</a></p>
           </section>
         </div><!-- /span9 -->
@@ -371,10 +366,11 @@
 <script>
   $('.docs-nav').affix({
     offset: {
-      top: 360
+      top: 340
     , bottom: 270
     }
   })
+
 </script>
 
 <!-- /// GOOGLE ANALYTICS /// -->
