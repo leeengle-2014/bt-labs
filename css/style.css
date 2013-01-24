@@ -5157,11 +5157,6 @@ pre {
 .top hr {
   margin-bottom: 0px;
 }
-#content {
-  background: url(../img/contentbg.png) repeat;
-  margin-bottom: 30px;
-  border-top: solid 1px #ffffff;
-}
 .navbar .brand {
   padding: 18px 20px 18px;
 }
@@ -5209,6 +5204,9 @@ pre {
   padding-top: 0;
   margin-top: 0 !important;
 }
+.secondnav a {
+  padding-left: 2px;
+}
 .center.navbar .nav,
 .center.navbar .nav > li {
   float: none;
@@ -5228,9 +5226,6 @@ pre {
 .center {
   text-align: center;
 }
-.secondnav > a {
-  padding-left: 2px;
-}
 .navbar .navinner .nav li a {
   padding: 15px 15px;
 }
@@ -5247,16 +5242,6 @@ pre {
   line-height: 24px;
   font-size: 14px;
   font-weight: 300;
-}
-.button-cta {
-  width: 70px;
-  margin: 10px;
-  font-family: 'Oswald', Helvetica, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
-}
-.border {
-  border-top: #9184bd solid 1px;
-  border-bottom: solid 1px #ffffff;
 }
 .socialDivide {
   height: 35px;
@@ -5285,11 +5270,16 @@ pre {
   line-height: 1;
   vertical-align: top;
 }
+#content {
+  background: url(../img/contentbg.png) repeat;
+  margin-bottom: 30px;
+  border-top: solid 1px #ffffff;
+}
 .hot {
   text-align: center;
   margin-top: 20px;
   line-height: 5px;
-  font-size: 16px;
+  font-size: 13px;
 }
 .hot ul {
   margin-top: 30px;
@@ -5305,15 +5295,6 @@ pre {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
   padding: 2px 2px 5px 2px;
-}
-.hot ul {
-  margin-top: 30px;
-}
-.hot ul p {
-  font-size: 13px;
-}
-.hot ul span {
-  font-size: 13px;
 }
 .hotfeaturedtext {
   text-align: left;
@@ -5341,9 +5322,6 @@ pre {
   border: 0;
   border-top: 1px solid #d9d9d9;
 }
-.hotfeatured {
-  margin-top: 30px;
-}
 #content .page-header {
   border-bottom: 1px solid #B8B8B8;
   margin: 35px 0 15px;
@@ -5357,6 +5335,12 @@ pre {
 }
 #content .top-header h2 {
   margin-top: 0px;
+}
+.button-cta {
+  width: 70px;
+  margin: 10px;
+  font-family: 'Oswald', Helvetica, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
 }
 .btn-primary {
   color: #ffffff;

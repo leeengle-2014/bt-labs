@@ -37,19 +37,12 @@ pre {
 	font-size:10px;
 }
 
+// ### TOP/NAV BAR ###
 .top {
 	hr {margin-bottom: 0px; }
 	background: url(../img/topbg.png) repeat;
 	border-bottom: 1px solid @divGray;
 }
-
-#content {
-	background: url(../img/contentbg.png) repeat;
-	margin-bottom: 30px;
-	border-top: solid 1px @white;
-}
-
-// ### NAV BAR ###
 
 .navbar .brand {
 	padding: 18px 20px 18px;
@@ -98,11 +91,13 @@ pre {
 	span {
 		padding-bottom: 14px !important;
 	}
-}
-
-.secondnav li {
-	padding-top: 0;
-	margin-top: 0 !important;
+	li {
+		padding-top: 0;
+		margin-top: 0 !important;		
+	}
+	a {
+		padding-left: 2px;
+	}
 }
 
 .center.navbar .nav,
@@ -123,10 +118,6 @@ pre {
 	text-align:center;
 }
 
-.secondnav > a {
-	padding-left: 2px;
-}
-
 .navbar .navinner .nav li a {
 	padding: 15px 15px;
 }
@@ -142,19 +133,6 @@ pre {
 		font-size: 14px;
 		font-weight:300;
 	}
-}
-
-
-.button-cta {
-	width: 70px;
-	margin: 10px;
-	font-family: @headingsFontFamily;
-	font-weight: 400;
-}
-
-.border { 
-border-top: #9184bd solid 1px;
-border-bottom: solid 1px @white
 }
 
 
@@ -188,12 +166,18 @@ border-bottom: solid 1px @white
 //}
 
 //  ## FRONT PAGE FEATURED CONTENT ##
+#content {
+	background: url(../img/contentbg.png) repeat;
+	margin-bottom: 30px;
+	border-top: solid 1px @white;
+}
+
 .hot {
 	text-align:center;
 	margin-top: 20px;
 	line-height: 5px;
 	ul {margin-top:30px;}
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .featuredbox {
@@ -205,16 +189,6 @@ border-bottom: solid 1px @white
 	padding: 2px 2px 5px 2px;
 }
 
-.hot ul {
-	margin-top: 30px;
-	p {
-		font-size: 13px;
-	}
-	span {
-		font-size: 13px;
-	}
-}
-
 .hotfeaturedtext {
 	text-align: left;
 	height: 90px;
@@ -222,7 +196,7 @@ border-bottom: solid 1px @white
 	font-size: 13px;
 	line-height: 17px;
 	color: @gray;
-	strong {color: @grayDarker;font-size:12px;}
+	strong {color: @grayDarker; font-size:12px;}
 	hr {
 		margin: 10px 0;
 		border: 0;
@@ -238,10 +212,6 @@ border-bottom: solid 1px @white
 		border: 0;
 		border-top:1px solid #d9d9d9;
 	}
-}
-
-.hotfeatured {
-	margin-top: 30px;
 }
 
 #content .page-header {
@@ -260,7 +230,15 @@ border-bottom: solid 1px @white
 	}
 }
 
-//  ### CUSTOM BUTTONS ###
+//  ### BUTTONS ###
+
+.button-cta {
+	width: 70px;
+	margin: 10px;
+	font-family: @headingsFontFamily;
+	font-weight: 400;
+}
+
 .btn-primary {
 	.buttonBackground(@btnPrimaryBackground, @btnPrimaryBackground);
 	border: 1px solid #645691 !important;
