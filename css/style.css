@@ -5128,7 +5128,9 @@ hr {
   border-top: 1px solid #9184bd;
   border-bottom: 1px solid #eceaef;
 }
-h1,
+h1 {
+  font-weight: 400;
+}
 h2,
 h3,
 h4,
@@ -5233,10 +5235,6 @@ pre {
   padding: 15px 0 15px;
   text-align: center;
   color: #4d4d4d;
-}
-.cta h1 {
-  color: #4d4d4d;
-  font-weight: 700;
 }
 .cta p {
   line-height: 24px;
