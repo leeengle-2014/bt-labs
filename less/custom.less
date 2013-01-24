@@ -29,7 +29,7 @@ h5 {
 }
 
 .gray {
-	border-top: 1px solid @grayLight;
+	border-top: 1px solid #bdbdbd;
 	border-bottom: 1px solid @white;
 }
 
@@ -38,22 +38,28 @@ pre {
 }
 
 .top {
-	hr {margin-bottom: 0px;}
+	hr {margin-bottom: 0px; }
 	background: url(../img/topbg.png) repeat;
+	border-bottom: 1px solid @divGray;
 }
 
 #content {
 	background: url(../img/contentbg.png) repeat;
 	margin-bottom: 30px;
+	border-top: solid 1px @white;
 }
 
 // ### NAV BAR ###
+
+.navbar .brand {
+	padding: 18px 20px 18px;
+}
 .navbar {
-	height: 50px;
+	height: 66px;
 }
 
 .navbar .nav > li {
-	margin-top: 15px;
+	margin-top: 27px;
 }
 
 .navlast {
@@ -65,19 +71,19 @@ pre {
 }
 
 .nav > li > a > span {
-	padding-bottom: 23px;
+	padding-bottom: 27px;
 }
 
 .nav > li > a > span:hover{
 	background-color: transparent;
 	color: #333333;text-decoration:none;
-	border-bottom: 3px solid @purple;
+	border-bottom: 4px solid @purple;
 }
 
 .navactive {
 	background-color: transparent;
 	color: #333333;text-decoration:none;
-	border-bottom: 3px solid @purple;
+	border-bottom: 4px solid @purple;
 }
 
 .secondnav {
@@ -90,7 +96,7 @@ pre {
 		margin: 0;
 	}
 	span {
-		padding-bottom: 9px !important;
+		padding-bottom: 14px !important;
 	}
 }
 
@@ -106,6 +112,7 @@ pre {
     *display:inline; /* ie7 fix */
     *zoom:1; /* hasLayout ie7 trigger */
     vertical-align: top;
+    margin: 0 10px -0px 0;
 }
 
 .center .navinner {
@@ -118,6 +125,10 @@ pre {
 
 .secondnav > a {
 	padding-left: 2px;
+}
+
+.navbar .navinner .nav li a {
+	padding: 15px 15px;
 }
 
 // ### TOP CTA ###
@@ -133,14 +144,6 @@ pre {
 	}
 }
 
-.cta-details {
-	border-bottom: 1px solid @grayLight;
-	margin-bottom: 20px;
-}
-
-.cta-index {
-	border-bottom: 1px solid @grayLight;
-}
 
 .button-cta {
 	width: 70px;
@@ -150,7 +153,8 @@ pre {
 }
 
 .border { 
-border-top:@purple solid 1px;
+border-top: #9184bd solid 1px;
+border-bottom: solid 1px @white
 }
 
 
@@ -204,7 +208,10 @@ border-top:@purple solid 1px;
 .hot ul {
 	margin-top: 30px;
 	p {
-		font-size: 14px;
+		font-size: 13px;
+	}
+	span {
+		font-size: 13px;
 	}
 }
 
@@ -215,7 +222,7 @@ border-top:@purple solid 1px;
 	font-size: 13px;
 	line-height: 17px;
 	color: @gray;
-	strong {color: @grayDarker;}
+	strong {color: @grayDarker;font-size:12px;}
 	hr {
 		margin: 10px 0;
 		border: 0;
@@ -288,13 +295,16 @@ border-top:@purple solid 1px;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.65);
 }
 
-
+.cta-details > .container > .btn-large {
+	margin: 10px 0 10px;
+}
 //  ### FOOTER ###
 
 #footer {
-	border-top: 1px solid #c0b9c4;
+	border-top: 1px solid @divGray;
 	background: @white;
 	text-align: center;
+	font-size: 12px
 }
 
 .footerhr {
@@ -309,17 +319,17 @@ border-top:@purple solid 1px;
 	height: auto !important;
 	height: 100%;
 /* Negative indent footer by it's height */
-	margin: 0 auto -140px;
+	margin: 0 auto -120px;
 }
 
 /* Set the fixed height of the footer here */
 #push {
-	height: 140px;
+	height: 120px;
 }
 
 /* Make sure the 3 numbers below equal the #push height */
 #footer { 
-	height: 100px;
+	height: 80px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	hr {
