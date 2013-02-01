@@ -5152,6 +5152,12 @@ h5 {
 pre {
   font-size: 10px;
 }
+.thumbnail {
+  border: 1px solid #cbcbcb;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
 .top {
   background: url(../img/topbg.png) repeat;
   border-bottom: 1px solid #c0b9c4;
