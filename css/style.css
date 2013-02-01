@@ -5277,13 +5277,13 @@ pre {
   text-align: center;
   margin-top: 20px;
   line-height: 5px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .hot ul {
   margin-top: 30px;
 }
 .featuredbox {
-  height: 250px;
+  height: 224px;
   background: #ffffff;
   border: solid 1px #cbcbcb;
   -webkit-border-radius: 2px;
@@ -5296,7 +5296,7 @@ pre {
 }
 .hotfeaturedtext {
   text-align: left;
-  height: 90px;
+  height: 70px;
   margin: 8px 6px 5px 6px;
   font-size: 13px;
   line-height: 17px;
@@ -5314,6 +5314,7 @@ pre {
 .hotfeaturedbutton {
   text-align: left;
   margin: 0 6px;
+  font-size: 13px;
 }
 .hotfeaturedbutton hr {
   margin: 10px 0;
@@ -5492,7 +5493,8 @@ pre {
   border-top: 1px solid #c0b9c4;
   background: #ffffff;
   text-align: center;
-  font-size: 12px;
+  font-size: 12px
+	color: #999;
 }
 .footerhr {
   width: 400px;

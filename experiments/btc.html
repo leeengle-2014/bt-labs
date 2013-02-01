@@ -10,30 +10,30 @@
   <meta name="description" content="">
   <link rel="icon" type="image/ico" href="http://labs.bittorrent.com/img/favicon.ico"/>
   <!-- FOR RESPONSIVE <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../js/prettify.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../js/prettify.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
   <!-- FOR RESPONSIVE <link href="bootstrap/css/responsive.css" rel="stylesheet"> -->
-  <script src="../../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  <script src="../../js/jquery.js"></script>
-  <script src="../../js/bootstrap.min.js"></script>
-  <script src="../../js/custom.js"></script>
-  <script src="../../js/prettify.js"></script>
+  <script src="../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/custom.js"></script>
+  <script src="../js/prettify.js"></script>
 </script>
 </head>
 <body data-spy="scroll" data-target=".docs-bar">
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-<div id="wrap"> 
+<div id="wrap">
   <div class="top">
     <div class="container">
       <nav class="navbar">
         <div>
-          <a href="../../index.html" class="brand"><img src="../../img/logo.png" alt="Labs" width="252" height="50"></a>
+          <a href="../index.html" class="brand"><img src="../img/logo.png" alt="Labs" width="252" height="50"></a>
           <ul class="nav pull-right">
-            <li><a href="../../experiments.html"><span>EXPERIMENTS</span></a></li>
-            <li><a href="../torque.html"><span>DEVELOPER TOOLS</span></a></li>
+            <li><a href="../experiments.html"><span class="navactive">EXPERIMENTS</span></a></li>
+            <li><a href="../developers/torque.html"><span>DEVELOPER TOOLS</span></a></li>
             <li><a class="navlast" target="_blank" href="http://forum.bittorrent.com/forum/52-bittorrent-labs/"><span>FORUMS</span></a></li>
           </ul>
         </div>
@@ -44,35 +44,29 @@
     <div class="container">
       <div class="cta cta-details">
         <div class="container">
-          <h1>BitTorrent Torque</h1>
-          <h4>Torque uses the btapp.js library to bring BitTorrent's powerful </br>
-            peer-to-peer technology to the web browser</h4>
-          <a target="_blank" href="https://github.com/bittorrenttorque/btapp" class="btn btn-info btn-large" style="letter-spacing:1px;">Download from GitHub</a>
-          <p>version 0.1.0 | <a target="_blank" href="http://forum.bittorrent.com/forum/68-bittorrent-torque/">forum</a><p>
+          <h1>BTC</h1>
+          <h4>Control uTorrent from the command line.</h4>
+          <a target="_blank" href="https://github.com/bittorrent/btc" class="btn btn-info btn-large" style="letter-spacing:1px;">View on GitHub</a>
+          <p>Discuss <a target="_blank" href="http://forum.bittorrent.com/forum/90-btc/">here</a> on our forums<p>
         </div> <!-- /container -->
+        <hr class="gray">
       </div> <!-- /cta -->
-      <nav class="navbar secondnav center">
-        <hr>
-        <div class="navinner">
-          <ul class="nav">
-            <li><a href="../torque.html"><span>INFO</span></a></li>
-            <li><a href="get-started.html"><span>GET STARTED</span></a></li>
-            <li><a href="code-snippets.html"><span>CODE SNIPPETS</span></a></li>
-            <li><a href="#"><span class="navactive">API VISUALIZER</span></a></li>
-            <li><a href="torrent-clients.html"><span>TORRENT CLIENTS</span></a></li>
-            <li><a href="videos.html"><span>LIVE CODING VIDEOS</span></a></li>
-          </ul>
-        </div>
-        <hr>
-      </nav>
-  <!--/// MAIN CONTENT ///-->
 
-  <!--/// DOC SIDE NAVIGATION ///-->
-      <div class="center">
-        <h2>Api Visualizer</h2>
-        <p>Connect to your underlying Torque torrent client and expose the api, <br>with all the data and remote function calls available in real time.</p>
-        <iframe style="width:100%;height: 800px" src="http://bittorrenttorque.github.com/visualizer" frameborder="0"></iframe>
-      </div>
+  <!--/// MAIN CONTENT ///-->
+      <div class="row center icons">
+        <div class="span4">
+          <h4>Efficient</h4>
+          <p>BTC can help you save time by automating repetitive tasks.</p>
+        </div>
+        <div class="span4">
+          <h4>Portable</h4>
+          <p>BTC works on all major operating systems, including Windows, Mac OS X and Linux.</p>
+        </div>
+        <div class="span4">
+          <h4>Open Source</h4>
+          <p>This is an open source project under MIT license.  Anyone can contribute.</p>
+        </div>
+      </div><!-- /row -->
     </div> <!-- /container -->
   </div> <!-- /content -->
   <div id="push"></div>
@@ -86,17 +80,6 @@
   Icons from <a href="http://www.iconsweets2.com/" target="_blank">iconsweets2</a></br>
   Built with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
 </div> <!-- /footer -->
-
-
-<!-- /// AFFIX SCROLL CODE /// -->
-<script>
-  $('.docs-nav').affix({
-    offset: {
-      top: 360
-    , bottom: 270
-    }
-  })
-</script>
 
 <!-- /// GOOGLE ANALYTICS /// -->
 <script>
