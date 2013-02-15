@@ -5157,6 +5157,8 @@ pre {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
+  background: white;
+  padding: 3px;
 }
 .top {
   background: url(../img/topbg.png) repeat;
