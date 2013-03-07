@@ -5599,6 +5599,9 @@ pre {
   top: auto;
   bottom: 270px;
 }
+.videoPop {
+  width: 590px;
+}
 .pull-right {
   float: right;
 }
