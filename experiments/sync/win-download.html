@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>BitTorrent Labs</title>
+  <meta name="description" content="">
+  <link rel="icon" type="image/ico" href="http://labs.bittorrent.com/img/favicon.ico"/>
+  <!-- FOR RESPONSIVE <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../js/prettify.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <!-- FOR RESPONSIVE <link href="bootstrap/css/responsive.css" rel="stylesheet"> -->
+  <script src="../../js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/bootstrap.min.js"></script>
+  <script src="../../js/custom.js"></script>
+  <script src="../../js/prettify.js"></script>
+  <script>
+    $(function() { // waiting for the DOM
+      setTimeout(function () {
+        var $modal = $('#notify'); // your selector
+        $modal.modal('show'); // show modal after X seconds   
+      }, 3000);
+    });
+  </script>
+</head>
+<body data-spy="scroll" data-target=".docs-bar">
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+<div id="notify" class="modal hide fade in videoPop">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">x</button>
+    <h3>Sign up to receive BitTorrent Sync news, tips and updates:</h3><h5>(and other BitTorrent news)</h5>
+  </div>
+  <div class="modal-body">
+    <div style=""> <!-- BEGIN EMAIL FORM -->
+      <form action="http://bittorrent.us5.list-manage.com/subscribe/post" method="POST" target="_blank" class="validate form-inline">
+        <input type="hidden" name="u" value="a3baea4e54ff8e8b235488c11">
+        <input type="hidden" name="id" value="30003c976d">
+        <div id="mergeTable" class="mergeTable">
+          <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+            <div class="field-group">
+              <input style="float:left" class="span5 input-large" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="email address">
+              <input style="float:right; width:150px;" type="submit" class="btn btn-primary btn-medium" name="submit" value="Subscribe"><br>
+            </div>
+          </div>
+          <div id="interestTable" style="display:none;">
+            <div id="mergeRow-100-17" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
+              <label>BitTorrent Labs</label>
+              <div class="field-group groups">
+                <ul class="interestgroup_field" id="interestgroup_field_2037"><li class="interestgroup_row"><input type="checkbox" id="group_4" name="group[17][4]" value="1">&nbsp;<label for="group_4">BitTorrent Live (broadcasters)</label></li><li class="interestgroup_row"><input type="checkbox" id="group_8" name="group[17][8]" value="1" checked>&nbsp;<label for="group_8">SyncApp</label></li><li class="interestgroup_row"><input type="checkbox" id="group_16" name="group[17][16]" value="1">&nbsp;<label for="group_16">BitTorrent Surf</label></li><li class="interestgroup_row"><input type="checkbox" id="group_32" name="group[17][32]" value="1">&nbsp;<label for="group_32">Torque</label></li></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div> <!-- END EMAIL FORM -->
+  </div> <!--modal-header-->
+</div><!-- END NOTIFY MODULE -->
+<div id="wrap">
+  <div class="top">
+    <div class="container">
+      <nav class="navbar">
+        <div>
+          <a href="../../index.html" class="brand"><img src="../../img/logo.png" alt="Labs" width="252" height="50"></a>
+          <ul class="nav pull-right">
+            <li><a href="../../experiments.html"><span class="navactive">EXPERIMENTS</span></a></li>
+            <li><a href="../../developers/torque.html"><span>DEVELOPER TOOLS</span></a></li>
+            <li><a class="navlast" target="_blank" href="http://forum.bittorrent.com/forum/52-bittorrent-labs/"><span>FORUMS</span></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div> <!-- /container -->
+  </div>  <!-- /top -->
+  <div id="content">
+    <div class="container">
+      <div class="cta cta-details">
+        <div class="container">
+          <h1>BitTorrent Sync</h1>
+          <h4>Automatically sync files via secure, </br>
+          distributed technology</h4>
+          <a href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
+          <p><a target="_blank" href="http://forum.bittorrent.com/topic/15208-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-syncapp/">forum</a></p>
+        </div> <!-- /container -->
+      </div> <!-- /cta -->
+      <nav class="navbar secondnav center">
+        <hr>
+        <div class="navinner">
+          <ul class="nav">
+            <li><a href="../sync.html"><span>INFO</span></a></li>
+            <li><a href="get-started.html"><span>GET STARTED</span></a></li>
+            <li><a href="technology.html"><span>TECHNOLOGY</span></a></li>
+          </ul>
+        </div> <!-- /navinner -->
+        <hr>
+      </nav>
+      <div id="downloadpop" class="modal hide fade in span6">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">x</button>
+          <h3>Select Your Operating System:</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="span3 center">
+              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.exe" onclick="window.open('win-download.html');"><img src="../../img/icons/win-dl.png">
+                <h5>Download for Windows</h5></a>
+            </div>
+            <div class="span3 center">
+              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.dmg" onclick="window.open('mac-download.html');"><img src="../../img/icons/mac-dl.png">
+                <h5>Download for Mac</h5></a>
+            </div>
+          </div> <!--row-->
+          <hr class="gray">
+          <h4>Other Downloads:</h4>
+          <div class="row">
+            <div class="span3" style="float:left;">
+              <p>Linux</p>
+              <ul>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_arm.gz" onclick="window.open('other-download.html');">Linux ARM</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_powerpc.gz" onclick="window.open('other-download.html');">Linux PowerPC</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html');">Linux i386</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html');">Linux i386 (64 bit)</a></li>
+              </ul>
+            </div> <!--span3-->
+            <div class="span3" style="float:left;">
+              <p>NAS Drives</p>
+              <ul>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html');">Synology 32 bit</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html');">Synology 64 bit</a></li>
+              </ul>
+            </div> <!--span3-->
+          </div> <!--row-->
+        </div> <!--modal-header-->
+      </div><!-- END DOWNPOP MODULE -->
+
+  <!--/// 3 COLUMNS ///-->
+      <h2><center>Windows Installation Instructions:</center></h2>
+      <br/>
+      <div class="row">
+        <div class="span6">
+          <img src="http://placehold.it/466x200" />
+        </div>
+        <div class="span6">
+          <p>If the download did not begin automatically, please click <a href="">here</a>.</p>
+          <ol>
+            <li>Do this</li>
+            <li>Then This</li>
+            <li>And finally, this</li>
+            <li>Check out our <a href="">user guide</a> for more information on setup and configuration</li>
+          </ol>
+        </div><!--span6-->
+      </div><!--row-->
+    </div> <!-- /container -->
+  </div> <!-- /content -->
+  <div id="push"></div>
+</div> <!-- /wrap -->
+
+<div id="footer">
+  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |  
+  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |  
+  <a href="http://www.bittorrent.com" target="_blank">BitTorrent.com</a>
+  <div class="footerhr"><hr></div>
+  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> / 
+  Built with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
+</div> <!-- /footer -->
+
+<!-- /// AFFIX SCROLL CODE /// -->
+<script>
+  $('.docs-nav').affix({
+    offset: {
+      top: 360
+    , bottom: 270
+    }
+  })
+</script>
+
+<!-- /// GOOGLE ANALYTICS /// -->
+<script>
+    var _gaq=[['_setAccount','UA-37901476-1'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>
+
+

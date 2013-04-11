@@ -1,0 +1,13 @@
+# List of files that will be ignored by SyncApp.
+# Use of * and ? symbols is allowed.
+#
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+desktop.ini
+Thumbs.db

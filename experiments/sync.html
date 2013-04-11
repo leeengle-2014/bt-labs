@@ -19,7 +19,6 @@
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/custom.js"></script>
   <script src="../js/prettify.js"></script>
-</script>
 </head>
 <body data-spy="scroll" data-target=".docs-bar">
   <!--[if lt IE 7]>
@@ -44,36 +43,83 @@
     <div class="container">
       <div class="cta cta-details">
         <div class="container">
-          <h1>SyncApp</h1>
-          <h4>Automatically sync files between computers via secure, <br>
-            distributed technology.</h4>
-          <a href="http://forum.bittorrent.com/forum/56-bittorrent-sync/" class="btn btn-info btn-large" style="letter-spacing:1px;">Visit Forum</a>
+          <h1>BitTorrent Sync</h1>
+          <h4>Automatically sync files via secure, </br>
+          distributed technology</h4>
+          <a href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
+          <p><a target="_blank" href="http://forum.bittorrent.com/topic/15208-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-syncapp/">forum</a></p>
         </div> <!-- /container -->
-        <hr class="gray">
       </div> <!-- /cta -->
+      <nav class="navbar secondnav center">
+        <hr>
+        <div class="navinner">
+          <ul class="nav">
+            <li><a href="#"><span class="navactive">INFO</span></a></li>
+            <li><a href="sync/get-started.html"><span>GET STARTED</span></a></li>
+            <li><a href="sync/technology.html"><span>TECHNOLOGY</span></a></li>
+          </ul>
+        </div> <!-- /navinner -->
+        <hr>
+      </nav>
+      <div id="downloadpop" class="modal hide fade in span6">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">x</button>
+          <h3>Select Your Operating System:</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="span3 center">
+              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.exe" onclick="window.open('sync/win-download.html');"><img src="../img/icons/win-dl.png">
+                <h5>Download for Windows</h5></a>
+            </div>
+            <div class="span3 center">
+              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.dmg" onclick="window.open('sync/mac-download.html');"><img src="../img/icons/mac-dl.png">
+                <h5>Download for Mac</h5></a>
+            </div>
+          </div> <!--row-->
+          <hr class="gray">
+          <h4>Other Downloads:</h4>
+          <div class="row">
+            <div class="span3" style="float:left;">
+              <p>Linux</p>
+              <ul>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_arm.gz" onclick="window.open('sync/other-download.html');">Linux ARM</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_powerpc.gz" onclick="window.open('sync/other-download.html');">Linux PowerPC</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('sync/other-download.html');">Linux i386</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('sync/other-download.html');">Linux i386 (64 bit)</a></li>
+              </ul>
+            </div> <!--span3-->
+            <div class="span3" style="float:left;">
+              <p>NAS Drives</p>
+              <ul>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('sync/other-download.html');">Synology 32 bit</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('sync/other-download.html');">Synology 64 bit</a></li>
+              </ul>
+            </div> <!--span3-->
+          </div> <!--row-->
+        </div> <!--modal-header-->
+      </div><!-- END DOWNPOP MODULE -->
+      <img src="../img/wide/sync.png" style="padding-bottom:15px;" class="" />
+      <hr class="gray">
+  <!--/// 3 COLUMNS ///-->
+      <div class="row center">
+        <div class="span4">
+          <img src="../img/icons/cloud-sync.png">
+          <h4>Sync and Share</h4>
+          <p>Sync unlimited files between your own devices, or share a folder with friends and family to automatically sync anything.</p>
+        </div>
+        <div class="span4">
+          <img src="../img/icons/lock.png">
+          <h4>Private and Secure</h4>
+          <p>File transfers are encrypted.  Your information is never stored on a server in the cloud and your data is protected by private keys.</p>
+        </div>
+        <div class="span4">
+          <img src="../img/icons/download.png">
+          <h4>Bigger is Better</h4>
+          <p>BitTorrent Sync is specifically designed to handle large files, so feel free to sync original, high quality, uncompressed files.</p>
+        </div>
+      </div><!-- /row -->
 
-  <!--/// MAIN CONTENT ///-->
-  <!--
-      <div class="row center icons">
-        <div class="span4">
-          <img src="../img/live/s-icon2.png">
-          <h4>Automatic Syncing</h4>
-          <p>Automatically synchronize your personal files between all your computers.</p>
-        </div>
-        <div class="span4">
-          <img src="../img/live/s-icon3.png">
-          <h4>Unlimited Syncing</h4>
-          <p>Sync as many files as you want, with no size restrictions.</p>
-        </div>
-        <div class="span4">
-          <img src="../img/live/s-icon1.png">
-          <h4>NAS Device Syncing</h4>
-          <p>Sync selected NAS storage devices.</p>
-        </div>
-      </div> --> <!-- /row --> 
-      <div class="center">
-        <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dE8wVzhYM0NOUUREdnJNUGFEY2xxc0E6MQ" width="940" height="1139" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-      </div>
     </div> <!-- /container -->
   </div> <!-- /content -->
   <div id="push"></div>
@@ -87,6 +133,16 @@
   Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> / 
   Built with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
 </div> <!-- /footer -->
+
+<!-- /// AFFIX SCROLL CODE /// -->
+<script>
+  $('.docs-nav').affix({
+    offset: {
+      top: 360
+    , bottom: 270
+    }
+  })
+</script>
 
 <!-- /// GOOGLE ANALYTICS /// -->
 <script>

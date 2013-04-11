@@ -5497,6 +5497,12 @@ pre {
 .cta-details > .container > .btn-large {
   margin: 10px 0 10px;
 }
+#downloadpop {
+  width: 490px !important;
+}
+#downloadpop .modal-body {
+  max-height: 500px;
+}
 #footer {
   border-top: 1px solid #c0b9c4;
   background: #ffffff;
