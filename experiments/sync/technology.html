@@ -46,8 +46,8 @@
         <div class="container">
           <h1>BitTorrent Sync</h1>
           <h4>Automatically sync files via secure, distributed technology.</h4>
-          <a href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
-          <p><a target="_blank" href="http://forum.bittorrent.com/topic/15208-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-syncapp/">forum</a></p>
+          <a onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);" href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
+          <p><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">forum</a></p>
         </div> <!-- /container -->
       </div> <!-- /cta -->
       <nav class="navbar secondnav center">
@@ -69,33 +69,32 @@
         <div class="modal-body">
           <div class="row">
             <div class="span3 center">
-              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.exe" onclick="window.open('win-download.html');"><img src="../../img/icons/win-dl.png">
+              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img src="../../img/icons/win-dl.png">
                 <h5>Download for Windows</h5></a>
                 <p style="font-size:11px;">(XP SP3 or newer)</p>
             </div>
             <div class="span3 center">
-              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.dmg" onclick="window.open('mac-download.html');"><img src="../../img/icons/mac-dl.png">
+              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
                 <h5>Download for Mac</h5></a>
                 <p style="font-size:11px;">(10.6 or newer)</p>
             </div>
           </div> <!--row-->
           <hr class="gray">
-          <h4>Other Downloads:</h4>
+          <h4>Linux and NAS Devices:</h4>
           <div class="row">
             <div class="span3" style="float:left;">
-              <p>Linux</p>
               <ul>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_arm.gz" onclick="window.open('other-download.html');">Linux ARM</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_powerpc.gz" onclick="window.open('other-download.html');">Linux PowerPC</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html');">Linux i386</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html');">Linux i386 (64 bit)</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_arm.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_powerpc.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux i386',, false]);">Linux i386</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html');_gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux x64',, false]);">Linux x64</a></li>
               </ul>
             </div> <!--span3-->
             <div class="span3" style="float:left;">
-              <p>NAS Drives</p>
               <ul>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html');">Synology 32 bit</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html');">Synology 64 bit</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology i386',, false]);">Synology i386</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology x64',, false]);">Synology x64</a></li>
+                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology PPC',, false]);">Synology PPC QorlQ</a></li>
               </ul>
             </div> <!--span3-->
           </div> <!--row-->
@@ -121,8 +120,8 @@
             <div class="page-header top-header">
               <h2>Secret</h3>
             </div>
-            <p>Secret is a randomly generated 21-byte key. It is Base32 encoded to be human readable. BitTorrent Sync uses dev/random on Mac.Linux and Crypto API on Windows in order to produce a very random string. This authentication approach is significantly stronger than the regular login/password combination used by other services. Because people can’t choose truly random passwords, each symbol in a password has to be human readable (so not all bits are used) and e-mail is very easy to discover or guess. In contrast, using a secret generated by BitTorrent Sync is very safe and secure.</p>
-            <p>BitTorrent made one more step to make sure you feel confident. We give you a way to use a custom secret of any length you want. Just generate a secret of any length, encode it with Base64, and enter in BitTorrent Sync.</p>
+            <p>The secret is a randomly generated 21-byte key. It is Base32-encoded in order to be readable by humans. BitTorrent Sync uses dev/random (Mac, Linux) and Crypto API (Windows) in order to produce a completely random string. This authentication approach is significantly stronger than a login/password combination used by other services. That's why using a secret generated by BitTorrent Sync is very safe and secure.</p>
+            <p>If you want even more security, BitTorrent Sync gives you a way to use a custom secret of any length you want. Just create your own secret of any length, encode it with Base64, and enter in the secret field for BitTorrent Sync.</p>
           </section>
           <!--=== SECTION: Platforms ===-->
           <section id="servers">
@@ -176,9 +175,9 @@
             <div class="page-header">
               <h2>Security</h2>
             </div>
-            <p>BitTorrent Sync was designed with privacy in mind. All the traffic between devices is encrypted with AES cypher and a 256-bit key created on the base of a secret - random string (32 characters or more) that is unique for every folder.</p>
-            <p>It’s our priority to make sure that nobody has unauthorized access to your media and documents. That’s why we don’t keep any of it on 3rd-party servers. All the files are stored only on your own and trusted devices, controlled and managed solely by you.</p>
-            <p>For the same reason we provide you with an agile way of managing secrets. You can regularly change them and invite people by sharing a one-time key instead of distributing a permanent secret.</p>
+            <p>BitTorrent Sync was designed with privacy and security in mind. All the traffic between devices is encrypted with AES cypher and a 256-bit key created on the base of the secret—a random string (20 bytes or more) that is unique for every folder.</p>
+            <p>It’s our priority to make sure that nobody has unauthorized access to your folders. That’s why there are no 3rd party servers involved when syncing your files. All the files are stored only on your trusted devices, controlled and managed solely by you.</p>
+            <p>For the same reason we provide you with an agile way of managing secrets. You can regularly change them and invite people by sharing a one-time secret instead of distributing a permanent one.</p>
           </section>
         </div><!-- /span9 -->
       </div><!-- /row -->
