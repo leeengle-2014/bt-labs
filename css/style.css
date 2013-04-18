@@ -5160,6 +5160,9 @@ pre {
   background: white;
   padding: 3px;
 }
+.screenshot {
+  padding: 5px 0 10px;
+}
 .top {
   background: url(../img/topbg.png) repeat;
   border-bottom: 1px solid #c0b9c4;
