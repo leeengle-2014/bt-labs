@@ -5161,7 +5161,7 @@ pre {
   padding: 3px;
 }
 .screenshot {
-  padding: 5px 0 10px;
+  padding: 5px 0 20px;
 }
 .top {
   background: url(../img/topbg.png) repeat;
@@ -5334,7 +5334,7 @@ pre {
 }
 #content .page-header {
   border-bottom: 1px solid #B8B8B8;
-  margin: 35px 0 15px;
+  margin: 35px 0 20px;
   padding-bottom: 5px;
 }
 #content .page-header h2 {

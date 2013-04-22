@@ -46,7 +46,7 @@
           <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
             <div class="field-group">
               <input style="float:left" class="span5 input-large" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="email address">
-              <input style="float:right; width:150px;" type="submit" class="btn btn-primary btn-medium" name="submit" value="Subscribe"><br>
+              <input onClick="_gaq.push(['_trackEvent', 'Email', 'Sync', 'Linux and NAS Page',, false]);" style="float:right; width:150px;" type="submit" class="btn btn-primary btn-medium" name="submit" value="Subscribe"><br>
             </div>
           </div>
           <div id="interestTable" style="display:none;">
@@ -146,10 +146,8 @@
           <h4>Linux:</h4>
           <ol>
             <li>Extract the downloaded tar.gz file to the desired location (BitTorrent Sync has permissions to execute by default)</li>
-            <li>Open terminal and run BitTorrent Sync from this location  ./btsync </li>
-            <li>Check out the <a href="get-started.html#linux-nas">user guide</a> for more information on setup and configuration</li>
+            <li>Open terminal and run BitTorrent Sync from this location  by typing <em>./btsync</em> </li>
           </ol>
-          <p>Check out the <a href="get-started.html#linux-nas">user guide</a> for more information on setup and configuration</p>
 
         </div><!--span6-->
         <div class="span6">
@@ -160,9 +158,10 @@
             <li>Select the right BitTorrent Sync binary and copy it to your NAS device.</li>
             <li>Log in to NAS using SSH and run the BitTorrent Sync binary.</li>
           </ol>
-          <p>Check out the <a href="get-started.html#linux-nas">user guide</a> for more information on setup and configuration</p>
         </div><!--span6-->
       </div><!--row-->
+      <div style="margin-top: 15px;" class="row center">
+        <p>Check out the <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BitTorrentSyncUserGuide.pdf">user guide</a> for more information on configuration and setup.</p>
     </div> <!-- /container -->
   </div> <!-- /content -->
   <div id="push"></div>

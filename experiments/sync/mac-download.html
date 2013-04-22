@@ -46,7 +46,7 @@
           <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
             <div class="field-group">
               <input style="float:left" class="span5 input-large" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="email address">
-              <input style="float:right; width:150px;" type="submit" class="btn btn-primary btn-medium" name="submit" value="Subscribe"><br>
+              <input onClick="_gaq.push(['_trackEvent', 'Email', 'Sync', 'Mac Page',, false]);" style="float:right; width:150px;" type="submit" class="btn btn-primary btn-medium" name="submit" value="Subscribe"><br>
             </div>
           </div>
           <div id="interestTable" style="display:none;">
@@ -141,18 +141,18 @@
   <!--/// 3 COLUMNS ///-->
       <h2><center>Mac Installation Instructions:</center></h2>
       <br/>
-      <div class="row">
-        <div class="span6">
-          <img src="../../img/screenshots/sync_install_mac.png" />
+      <div>
+        <div style="float:left; padding-top:2px; width:400px; margin-left:85px;">
+          <img class="thumbnail" src="../../img/screenshots/sync_install_mac.png" />
         </div>
-        <div class="span6">
+        <div style="float:left; width:400px;margin-left:10px;">
           <p>If the download did not begin automatically, please click <a href="">here</a>.</p>
           <ol>
             <li>Open BTSync.dmg</li>
             <li>Drag the BitTorrent Sync icon to the Applications folder</li>
             <li>Run BitTorrent Sync from your Applications folder</li>
           </ol>
-          <p>Check out the BitTorrent Sync <a href="get-started.html">user guide</a> for more information on setup and configuration.</p>
+          <p>Check out the BitTorrent Sync <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BitTorrentSyncUserGuide.pdf">user guide</a> for more information on setup and configuration.</p>
         </div><!--span6-->
       </div><!--row-->
     </div> <!-- /container -->
