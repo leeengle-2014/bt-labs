@@ -69,12 +69,12 @@
         <div class="modal-body">
           <div class="row">
             <div class="span3 center">
-              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img src="../../img/icons/win-dl.png">
+              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img src="../../img/icons/win-dl.png">
                 <h5>Download for Windows</h5></a>
                 <p style="font-size:11px;">(XP SP3 or newer)</p>
             </div>
             <div class="span3 center">
-              <a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
+              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
                 <h5>Download for Mac</h5></a>
                 <p style="font-size:11px;">(10.6 or newer)</p>
             </div>
@@ -84,20 +84,24 @@
           <div class="row">
             <div class="span3" style="float:left;">
               <ul>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_arm.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_powerpc.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux i386',, false]);">Linux i386</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html');_gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux x64',, false]);">Linux x64</a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_powerpc.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux i386',, false]);">Linux i386</a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_x64.tar.gz" onclick="window.open('other-download.html');_gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux x64',, false]);">Linux x64</a></li>
               </ul>
             </div> <!--span3-->
             <div class="span3" style="float:left;">
               <ul>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_i386.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology i386',, false]);">Synology i386</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology x64',, false]);">Synology x64</a></li>
-                <li><a href="http://syncapp.bittorrent.com/XXY47D72HC/SyncApp_x64.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology PPC',, false]);">Synology PPC QorlQ</a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_glibc23_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology i386',, false]);">Linux_i386 (glibc 2.3) </a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_glibc23_x64.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology x64',, false]);">Linux_x64 (glibc 2.3)  </a></li>
+                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_ppc_quoriq.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology PPC',, false]);">Linux PPC QorIQ</a></li>
               </ul>
             </div> <!--span3-->
           </div> <!--row-->
+          <div style="font-size:11px;" class="center">
+            <br/>
+            <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
+          </div>
         </div> <!--modal-header-->
       </div><!-- END DOWNPOP MODULE -->
 
@@ -125,7 +129,11 @@
             <ul>
               <li>Mac OS X Snow Leopard or later</li>
               <li>Windows XP SP3 (32-bit) or newer (32 and 64-bit)</li>
+<<<<<<< HEAD
               <li>Linux with kernel 2.6.16 (glibs 2.4) or newer on ARM/PPC/i386/x86_64</li>
+=======
+              <li>Linux with kernel 2.6.16 (glibc 2.4) or newer on ARM/PPC/i386/x86_64</li>
+>>>>>>> updating sync and surf pages
             </ul>
             <p>You can install our application on <em>Network Attached Storages</em> (NAS) running on Linux with ARM, PowerPC, i386 and x86_64 architecture.</p>
             <p>In the future, we plan to also support most popular mobile platforms.</p>
@@ -153,7 +161,11 @@
               <h2>Secret</h3>
             </div>
             <p>The secret is a randomly generated 21-byte key. It is Base32-encoded in order to be readable by humans. BitTorrent Sync uses dev/random (Mac, Linux) and the Crypto API (Windows) in order to produce a completely random string. This authentication approach is significantly stronger than a login/password combination used by other services. That's why using a secret generated by BitTorrent Sync is very safe and secure.</p>
+<<<<<<< HEAD
             <p>If you want even more security, BitTorrent Sync gives you a way to use a custom secret of any length you want. Just create your own secret of any length, encode it with Base64, and enter in the secret field for BitTorrent Sync.</p>
+=======
+            <p>If you want even more security, BitTorrent Sync gives you a way to use a custom secret. Just create your own secret, encode it with Base64, and enter in the secret field for BitTorrent Sync. Note that a custom secret should be more than 40 characters long.</p>
+>>>>>>> updating sync and surf pages
           </section>
           <!--=== SECTION: Peer Discovery ===-->
           <section id="peer-discovery">
@@ -166,10 +178,16 @@
               <li><u>Peer exchange (PEX)</u>. When two peers are connected, they exchange information about other peers they know.</li>
               <li><u>Known hosts (folder settings)</u>. If you have a known host with a static <em>ip:port</em>, you can specify this in Sync client, so that it connects to the peer using this information.</li>
               <li><u>DHT</u>. Sync uses DHT to distribute information about itself and obtain the information about other peers with this secret. Sync sends SHA2(Secret):ip:port to DHT to announce itself and will get a list of peers by asking DHT for the following key SHA2(Secret)</li>
+<<<<<<< HEAD
               <li><u>BitTorrent tracker</u>. BitTorrent Sync can use a specific tracker server to facilitate peer discovery. The tracker server sees the combination of SHA2(secret):ip:port and helps peers connect directly. The BitTorrent tracker is also a STUN server and can do a NAT traversal for peers. It helps peers behind NAT establish a direct connection.</li>
             </ul>
             <p>We recommend that you use a tracker server instead of DHT for reasons of faster response and NAT traversal, so peers have a higher probability of networking directly.</p>
             <p>Another application of BitTorrent tracker is as a STUN server to do a NAT traversal for peers. It helps peers behind an NAT to establish direct connection. This can’t be done by DHT, so even if peers can talk to DHT, they won’t be able to talk directly.</p>
+=======
+              <li><u>BitTorrent tracker</u>. BitTorrent Sync can use a specific tracker server to facilitate peer discovery. The tracker server sees the combination of SHA2(secret):ip:port and helps peers connect directly. The BitTorrent Sync tracker also acts like a STUN server and can help do a NAT traversal for peers so that they can establish a direct connection even behind a NAT.</li>
+            </ul>
+            <p>We recommend that you use a tracker server instead of DHT for reasons of faster response and NAT traversal, so peers have a higher probability of networking directly.</p>
+>>>>>>> updating sync and surf pages
           </section>
           <!--=== SECTION: Relay Server ===-->
           <section id="traffic-relay">
