@@ -19,49 +19,11 @@
   <script src="../../js/bootstrap.min.js"></script>
   <script src="../../js/custom.js"></script>
   <script src="../../js/prettify.js"></script>
-  <script>
-    $(function() { // waiting for the DOM
-      setTimeout(function () {
-        var $modal = $('#notify'); // your selector
-        $modal.modal('show'); // show modal after X seconds   
-      }, 3000);
-    });
-  </script>
 </head>
 <body data-spy="scroll" data-target=".docs-bar">
   <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-<div id="notify" class="modal hide fade in videoPop">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal">x</button>
-    <h3>Subscribe to receive BitTorrent Sync news, tips and updates:</h3><h5>(and other BitTorrent news)</h5>
-  </div>
-  <div class="modal-body">
-    <div style=""> <!-- BEGIN EMAIL FORM -->
-      <form action="http://bittorrent.us5.list-manage.com/subscribe/post" method="POST" target="_blank" class="validate form-inline">
-        <input type="hidden" name="u" value="a3baea4e54ff8e8b235488c11">
-        <input type="hidden" name="id" value="30003c976d">
-        <div id="mergeTable" class="mergeTable">
-          <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
-            <div class="field-group">
-              <input style="float:left" class="span5 input-large" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="email address">
-              <input onClick="_gaq.push(['_trackEvent', 'Email', 'Sync', 'Win Page',, false]);" style="float:right; width:150px;" type="submit" class="btn btn-primary btn-medium" name="submit" value="Subscribe"><br>
-            </div>
-          </div>
-          <div id="interestTable" style="display:none;">
-            <div id="mergeRow-100-17" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
-              <label>BitTorrent Labs</label>
-              <div class="field-group groups">
-                <ul class="interestgroup_field" id="interestgroup_field_2037"><li class="interestgroup_row"><input type="checkbox" id="group_4" name="group[17][4]" value="1">&nbsp;<label for="group_4">BitTorrent Live (broadcasters)</label></li><li class="interestgroup_row"><input type="checkbox" id="group_8" name="group[17][8]" value="1" checked>&nbsp;<label for="group_8">SyncApp</label></li><li class="interestgroup_row"><input type="checkbox" id="group_16" name="group[17][16]" value="1">&nbsp;<label for="group_16">BitTorrent Surf</label></li><li class="interestgroup_row"><input type="checkbox" id="group_32" name="group[17][32]" value="1">&nbsp;<label for="group_32">Torque</label></li></ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div> <!-- END EMAIL FORM -->
-  </div> <!--modal-header-->
-</div><!-- END NOTIFY MODULE -->
 <div id="wrap">
   <div class="top">
     <div class="container">
@@ -94,6 +56,7 @@
             <li><a href="../sync.html"><span>INFO</span></a></li>
             <li><a href="get-started.html"><span>GET STARTED</span></a></li>
             <li><a href="technology.html"><span>TECHNOLOGY</span></a></li>
+            <li><a href="#"><span>MOBILE</span></a></li>
           </ul>
         </div> <!-- /navinner -->
         <hr>
@@ -137,30 +100,55 @@
               </ul>
             </div> <!--span3-->
           </div> <!--row-->
+          <div style="font-size:11px;" class="center">
+            <br/>
+            <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
+          </div>
         </div> <!--modal-header-->
-        <div style="font-size:11px;" class="center">
-          <br/>
-          <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
-        </div>
       </div><!-- END DOWNPOP MODULE -->
 
   <!--/// 3 COLUMNS ///-->
-      <h2><center>Windows Installation Instructions:</center></h2>
-      <br/>
-      <div>
-        <div style="float:left; padding-top:2px; width:400px; margin-left:85px;">
-          <img class="" src="../../img/screenshots/sync_install_win.png" />
-        </div>
-        <div style="float:left; width:400px;margin-left:10px;">
-          <p>If the download did not begin automatically, please click <a href="">here</a>.</p>
-          <ol>
-            <li>Run BTSync.exe</li>
-            <li>If necessary, allow the program to make changes and follow the install wizard</li>
-            <li>After installation, BitTorrent Synс will start automatically</li>
-          </ol>
-          <p>Check out the BitTorrent Sync <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BitTorrentSyncUserGuide.pdf">user guide</a> for more information on setup and configuration.</p>
-        </div><!--span6-->
-      </div><!--row-->
+      <div class="row">
+        <div class="span6">
+          <h2>BitTorrent Sync is Going Mobile</h2>
+          <p>Be one of the first test the new Sync mobile apps.</p>
+          <p>Android and iOS applications are being developed for BitTorrent sync.  If you would like to assist with the testing, then enter your email below.</p>
+          <p>Currently in private beta.  Request an invite below:</p>
+          </br>
+          <div> <!-- BEGIN EMAIL FORM -->
+            <form action="http://bittorrent.us5.list-manage.com/subscribe/post" method="POST" target="_blank" class="validate form-inline">
+              <input type="hidden" name="u" value="a3baea4e54ff8e8b235488c11">
+              <input type="hidden" name="id" value="30003c976d">
+              <div id="mergeTable" class="mergeTable">
+                <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+                  <div class="field-group">
+                    <select id="MOBILE" name="MOBILE"><option selected disabled="disabled">Select a mobile platform:</option><option value="Android">Android</option><option value="iOS">iOS</option><option value="Other">Other</option></select>
+                    </br>
+                    </br>
+                    <input class="span4 input-large" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="email address">
+                    <input type="submit" class="btn btn-primary btn-medium" name="submit" value="Submit">
+                  </div>
+                </div>
+                <div id="interestTable" style="display:none;">
+                  <div id="mergeRow-100-17" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
+                    <label>BitTorrent Labs</label>
+                    <div class="field-group groups">
+                      <ul class="interestgroup_field" id="interestgroup_field_2037">
+                        <li class="interestgroup_row"><input type="checkbox" id="group_4" name="group[17][4]" value="1">&nbsp;<label for="group_4">BitTorrent Live (broadcasters)</label></li>
+                        <li class="interestgroup_row"><input type="checkbox" id="group_8" name="group[17][8]" value="1">&nbsp;<label for="group_8">BitTorrent Sync</label></li>
+                        <li class="interestgroup_row"><input type="checkbox" id="group_32768" name="group[17][32768]" value="1" checked>&nbsp;<label for="group_32768">BitTorrent Sync (mobile)</label></li>
+                        <li class="interestgroup_row"><input type="checkbox" id="group_16" name="group[17][16]" value="1">&nbsp;<label for="group_16">BitTorrent Surf</label></li>
+                        <li class="interestgroup_row"><input type="checkbox" id="group_32" name="group[17][32]" value="1">&nbsp;<label for="group_32">Torque</label></li></ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div> <!-- END EMAIL FORM -->
+        </div> <!-- END SPAN6 -->
+        <div class="span6">
+          <img src="http://placehold.it/460x310"
+      </div>
     </div> <!-- /container -->
   </div> <!-- /content -->
   <div id="push"></div>
