@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   <script src="//cdn.optimizely.com/js/246838682.js"></script>
-  <script src="//cdn.optimizely.com/js/246838682.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>BitTorrent Labs</title>
@@ -25,7 +24,7 @@
     $(function() { // waiting for the DOM
       setTimeout(function () {
         var $modal = $('#notify'); // your selector
-        $modal.modal('show'); // show modal after X seconds   
+        $modal.modal('show'); // show modal after X seconds
       }, 3000);
     });
   </script>
@@ -37,6 +36,7 @@
 <div id="notify" class="modal hide fade in videoPop">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">x</button>
+    <h3>Subscribe to receive BitTorrent Sync news, tips and updates:</h3><h5>(and other BitTorrent news)</h5>
     <h3>Subscribe to receive BitTorrent Sync news, tips and updates:</h3><h5>(and other BitTorrent news)</h5>
   </div>
   <div class="modal-body">
@@ -80,28 +80,31 @@
     </div> <!-- /container -->
   </div>  <!-- /top -->
   <div id="content">
-    <div class="container">
+    <div class="sync-cta">
       <div class="cta cta-details">
         <div class="container">
           <h1>BitTorrent Sync</h1>
           <h4>Automatically sync files via secure, distributed technology.</h4>
-          <a onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);" href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
-          <p><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">forum</a></p>
+          <br/>
+          <a href="#syncdownloadpop" role="button" class="btn btn-toad" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">Download</a>
         </div> <!-- /container -->
       </div> <!-- /cta -->
+    </div>
+    <div class="container">
       <nav class="navbar secondnav center">
-        <hr>
         <div class="navinner">
           <ul class="nav">
             <li><a href="../sync.html"><span>INFO</span></a></li>
             <li><a href="get-started.html"><span>GET STARTED</span></a></li>
             <li><a href="technology.html"><span>TECHNOLOGY</span></a></li>
             <li><a href="mobile.html"><span>MOBILE</span></a></li>
+            <li><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a></li>
+            <li><a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">FORUM</a></li>
           </ul>
         </div> <!-- /navinner -->
         <hr>
       </nav>
-      <div id="downloadpop" class="modal hide fade in span6">
+      <div id="syncdownloadpop" class="modal hide fade" aria-hidden="false">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">x</button>
           <h3>Select Your Operating System:</h3>
@@ -112,40 +115,40 @@
               <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img src="../../img/icons/win-dl.png">
                 <h5>Download for Windows</h5></a>
                 <p style="font-size:11px;">(XP SP3 or newer)</p>
-            </div>
-            <div class="span3 center">
-              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
-                <h5>Download for Mac</h5></a>
-                <p style="font-size:11px;">(10.6 or newer)</p>
-            </div>
-          </div> <!--row-->
-          <hr class="gray">
-          <h4>Linux and NAS Devices:</h4>
-          <div class="row">
-            <div class="span3" style="float:left;">
-              <ul>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_powerpc.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux i386',, false]);">Linux i386</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_x64.tar.gz" onclick="window.open('other-download.html');_gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux x64',, false]);">Linux x64</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_ppc_quoriq.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology PPC',, false]);">Linux PPC QorIQ</a></li>
-              </ul>
-            </div> <!--span3-->
-            <div class="span3" style="float:left;">
-              <ul>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_glibc23_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology i386',, false]);">Linux_i386 (glibc 2.3)</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_glibc23_x64.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology x64',, false]);">Linux_x64 (glibc 2.3)</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_freebsd_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'FreeBSD i386',, false]);">FreeBSD i386</a></li>
-                <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_freebsd_x64.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'FreeBSD x64',, false]);">FreeBSD X64</a></li>
-              </ul>
-            </div> <!--span3-->
-          </div> <!--row-->
-        </div> <!--modal-header-->
-        <div style="font-size:11px;" class="center">
-          <br/>
-          <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
-        </div>
-      </div><!-- END DOWNPOP MODULE -->
+              </div>
+              <div class="span3 center">
+                <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
+                  <h5>Download for Mac</h5></a>
+                  <p style="font-size:11px;">(10.6 or newer)</p>
+                </div>
+              </div> <!--row-->
+              <hr class="gray">
+              <h4>Linux and NAS Devices:</h4>
+              <div class="row">
+                <div class="span3" style="float:left;">
+                  <ul>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_powerpc.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux i386',, false]);">Linux i386</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_x64.tar.gz" onclick="window.open('other-download.html');_gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux x64',, false]);">Linux x64</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_ppc_quoriq.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology PPC',, false]);">Linux PPC QorIQ</a></li>
+                  </ul>
+                </div> <!--span3-->
+                <div class="span3" style="float:left;">
+                  <ul>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_glibc23_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology i386',, false]);">Linux_i386 (glibc 2.3)</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_glibc23_x64.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Synology x64',, false]);">Linux_x64 (glibc 2.3)</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_freebsd_i386.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'FreeBSD i386',, false]);">FreeBSD i386</a></li>
+                    <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_freebsd_x64.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'FreeBSD x64',, false]);">FreeBSD X64</a></li>
+                  </ul>
+                </div> <!--span3-->
+              </div> <!--row-->
+              <div style="font-size:11px;" class="center">
+                <br>
+                <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
+              </div>
+            </div> <!--modal-header-->
+          </div><!-- END DOWNPOP MODULE -->
 
   <!--/// 3 COLUMNS ///-->
       <h2><center>Windows Installation Instructions:</center></h2>
@@ -168,13 +171,15 @@
   </div> <!-- /content -->
   <div id="push"></div>
 </div> <!-- /wrap -->
-
+<!-- /* OpenX Image Conversion Tag */ -->
+<div id='cvid_3387' style='position: absolute; left: 0px; top: 0px; visibility: hidden;'><img src='http://offers.bittorrent.com/w/1.0/rai?cvid=3387&cb=%%RANDOM_NUMBER%%' width='0' height='0' alt='' /></div>
+<!-- end generated tag -->
 <div id="footer">
-  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |  
-  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |  
+  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |
+  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |
   <a href="http://www.bittorrent.com" target="_blank">BitTorrent.com</a>
   <div class="footerhr"><hr></div>
-  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> / 
+  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> /
   Built with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
 </div> <!-- /footer -->
 

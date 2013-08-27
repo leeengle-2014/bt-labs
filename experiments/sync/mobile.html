@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <script src="//cdn.optimizely.com/js/246838682.js"></script>
+  <script src="//cdn.optimizely.com/js/50136351.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>BitTorrent Labs</title>
@@ -41,28 +41,31 @@
     </div> <!-- /container -->
   </div>  <!-- /top -->
   <div id="content">
-    <div class="container">
+    <div class="sync-cta">
       <div class="cta cta-details">
         <div class="container">
           <h1>BitTorrent Sync</h1>
           <h4>Automatically sync files via secure, distributed technology.</h4>
-          <a onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);" href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
-          <p><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">forum</a></p>
+          <br/>
+          <a href="#syncdownloadpop" role="button" class="btn btn-toad" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">Download</a>
         </div> <!-- /container -->
       </div> <!-- /cta -->
+    </div>
+    <div class="container">
       <nav class="navbar secondnav center">
-        <hr>
         <div class="navinner">
           <ul class="nav">
             <li><a href="../sync.html"><span>INFO</span></a></li>
             <li><a href="get-started.html"><span>GET STARTED</span></a></li>
             <li><a href="technology.html"><span>TECHNOLOGY</span></a></li>
             <li><a href="#"><span>MOBILE</span></a></li>
+            <li><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a></li>
+            <li><a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">FORUM</a></li>
           </ul>
         </div> <!-- /navinner -->
         <hr>
       </nav>
-      <div id="downloadpop" class="modal hide fade in span6">
+      <div id="syncdownloadpop" class="modal hide fade in span6">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">x</button>
           <h3>Select Your Operating System:</h3>
@@ -70,20 +73,36 @@
         <div class="modal-body">
           <div class="row">
             <div class="span3 center">
-              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img src="../../img/icons/win-dl.png">
-                <h5>Download for Windows</h5></a>
-                <p style="font-size:11px;">(XP SP3 or newer)</p>
+              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img style="width:150px" src="../../img/icons/win-dl.png">
+              <h5 style="margin:0px 0px 0px 0px">Windows</h5></a>
+              <p style="font-size:11px;">(XP SP3 or newer)</p>
             </div>
             <div class="span3 center">
-              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
-                <h5>Download for Mac</h5></a>
-                <p style="font-size:11px;">(10.6 or newer)</p>
+              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img style="width:150px" src="../../img/icons/mac-dl.png">
+              <h5 style="margin:0px 0px 0px 0px">Mac OSX</h5></a>
+              <p style="font-size:11px;">(10.6 or newer)</p>
             </div>
           </div> <!--row-->
-          <hr class="gray">
+          <hr class="gray" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px">
+          <h4>Mobile:</h4>
+          <div class="row" style="margin-top:-15px">
+            <div class="span3 center">
+              <a href="https://play.google.com/store/apps/details?id=com.bittorrent.sync" onclick="_gaq.push(['_trackEvent', 'Download', 'Sync', 'Android',, false]);">
+                <img style="width:80px" alt="Android app on Google Play"
+                     src="../../img/icons/android.png" />
+                <h5 style="margin:0px 0px 0px 0px">Android</h5>
+              </a>
+            </div> <!--span3-->
+            <div class="span3 center">
+              <img style="width:100px" src="../../img/icons/mac-dl.png">
+              <h5 style="margin:0px 0px 0px 0px">iOS</h5>
+              <p style="font-size:11px;">(coming soon)</p>
+            </div> <!--span3-->
+          </div> <!--row-->
+          <hr class="gray" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px">
           <h4>Linux and NAS Devices:</h4>
           <div class="row">
-            <div class="span3" style="float:left;">
+            <div class="span3">
               <ul>
                 <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
                 <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_powerpc.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
@@ -101,7 +120,7 @@
               </ul>
             </div> <!--span3-->
           </div> <!--row-->
-          <div style="font-size:11px;" class="center">
+          <div style="font-size:11px;margin-top:-20px" class="center">
             <br/>
             <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
           </div>
@@ -110,63 +129,133 @@
 
   <!--/// 3 COLUMNS ///-->
       <div class="row">
-        <div class="span6">
-          <h2>BitTorrent Sync is Going Mobile</h2>
-          <p>Be one of the first to test the new Sync mobile apps.</p>
-          <p>Android and iOS applications are being developed for BitTorrent Sync.  We need volunteers to test (and break) these new apps and provide feedback.  Interested?</p>
-          <p>Currently in private alpha.  Request an invite below:</p>
-          </br>
-          <div> <!-- BEGIN EMAIL FORM -->
-            <form action="http://bittorrent.us5.list-manage.com/subscribe/post" method="POST" target="_blank" class="validate form-inline">
-              <form action="http://utorrent.us5.list-manage1.com/subscribe/post" method="post">
-              <input type="hidden" name="u" value="a3baea4e54ff8e8b235488c11">
-              <input type="hidden" name="id" value="f34a6d1f6d">
-              <div id="mergeTable" class="mergeTable">
-                <div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
-                  <div class="field-group">
-                    <select id="MERGE3" name="MERGE3">
-                      <option selected disabled="disabled">Select a mobile platform:</option>
-                      <option value="Android">Android</option>
-                      <option value="iOS">iOS</option>
-                      <option value="Other">Other</option>
-                    </select>
-                    </br>
-                    </br>
-                    <input class="span4 input-large" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="email address">
-                    <input type="submit" class="btn btn-primary btn-medium" name="submit" value="Submit">
-                  </div>
-                </div>
-                <div id="interestTable" style="display:none;">
-                  <div id="mergeRow-100-17" class="mergeRow dojoDndItem mergeRow-interests-checkboxes">
-                    <label>BitTorrent Labs</label>
-                    <div class="field-group groups">
-                      <ul class="interestgroup_field" id="interestgroup_field_2037">
-                        <li class="interestgroup_row"><input type="checkbox" id="group_4" name="group[17][4]" value="1">&nbsp;<label for="group_4">BitTorrent Live (broadcasters)</label></li>
-                        <li class="interestgroup_row"><input type="checkbox" id="group_8" name="group[17][8]" value="1">&nbsp;<label for="group_8">BitTorrent Sync</label></li>
-                        <li class="interestgroup_row"><input type="checkbox" id="group_32768" name="group[17][32768]" value="1" checked>&nbsp;<label for="group_32768">BitTorrent Sync (mobile)</label></li>
-                        <li class="interestgroup_row"><input type="checkbox" id="group_16" name="group[17][16]" value="1">&nbsp;<label for="group_16">BitTorrent Surf</label></li>
-                        <li class="interestgroup_row"><input type="checkbox" id="group_32" name="group[17][32]" value="1">&nbsp;<label for="group_32">Torque</label></li></ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div> <!-- END EMAIL FORM -->
+        <div class="span3 docs-bar">
+          <ul class="nav nav-list docs-nav">
+            <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
+            <li><a href="#gettingStarted"><i class="icon-chevron-right"></i> Getting Started</a></li>
+            <li><a href="#scanToSync"><i class="icon-chevron-right"></i> Scan to Sync</a></li>
+            <li><a href="#syncMobile"><i class="icon-chevron-right"></i> Sync Mobile-to-Mobile</a></li>
+            <li><a href="#mobileBackup"><i class="icon-chevron-right"></i> Mobile Backup</a></li>
+            <li><a href="#permissions"><i class="icon-chevron-right"></i> Permissions</a></li>
+          </ul>
+        </div> <!-- /span3 -->
+        <div class="span9">
+
+          <!--=== SECTION: Overview ===-->
+          <section id="overview">
+            <div class="page-header top-header">
+              <h2>Overview</h2>
+            </div>
+            <p>Want to share and sync files on the go? BitTorrent Sync lets you share files with family and friends, share files between mobile devices, and backup your phone and tablets.</p>
+            <p>BitTorrent Sync is available for install on the following mobile platforms*:
+              <ul>
+                <li>Android 2.2 and higher</li>
+                <li>iOS 5.0 and higher (coming soon)</li>
+              </ul>
+            </p>
+            <p>*Compatible with BitTorrent Sync for desktop version <strong>1.1.27 or later</strong>. <a href="#syncdownloadpop" role="button" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">Download here</a>.</p>
+          </section>
+
+          <br />
+
+          <!--=== SECTION: Getting Started ===-->
+          <section id="gettingStarted">
+            <div class="page-header">
+              <h2>Getting Started Syncing</h2>
+            </div>
+            <p>Sync files between mobile devices, collaborators, or your home and work PC. Here’s how it works:</p>
+            <p>On Android
+              <ol>
+                <li>Tap the <strong>Add Folder</strong> icon in the Sync tab.</li>
+                <li>Choose a folder you’d like to sync.</li>
+                <li>Scan the QR code for a sync folder from your computer. You can also enter or paste the secret manually in the text field.</li>
+                <li>Check or uncheck <strong>Automatic Sync</strong>. If you check <strong>Automatic Sync</strong>, all files will be downloaded to your phone or tablet automatically. If you leave it unchecked, you’ll need to choose files to download manually. Not sure? Don’t sweat it. This preference can be changed later in <strong>Folder Preferences</strong>.</li>
+                <li>Click <strong>Done</strong>. You’re ready to go.</li>
+              </ol>
+              <img src="../../img/mobile/01.-add_sync_folder-ANDROID.png" style="width:300px;margin-left:100px" />
+            </p>
+          </section>
+
+          <!--=== SECTION: Using QR Codes ===-->
+          <section id="scanToSync">
+            <div class="page-header">
+              <h2>Scan to Sync</h2>
+            </div>
+            <p>When you create a new folder secret, a QR code will be generated. Scan and share this QR code to easily sync files between mobile devices.</p>
+            <p>You can also scan to sync folders between your desktop and mobile device. From your desktop, right-click the folder you want to sync, or go to Folder Preferences, and choose <strong>Connect Mobile</strong>. The QR code will be displayed. To sync your desktop folder to your mobile device, just scan the QR code using your smartphone.</p>
+          </section>
+
+            <br />
+
+          <!--=== SECTION: Adding a Synce folder ===-->
+          <section id="syncMobile">
+            <div class="page-header">
+              <h2>Sync Mobile-to-Mobile</h2>
+            </div>
+            <p>You asked for it. We built it. :) Now, BitTorrent Sync lets you send files directly from your phone to other BitTorrent Sync-enabled mobile devices.</p>
+            <p>Send mobile-to-mobile:
+              <ol>
+                <li>Tap <strong>Select Files to Send</strong> on one of the devices.</li>
+                <li>Choose photographs, documents, or any other files you’d like to send.</li>
+                <li>After you’ve picked your files, you’ll get a QR code.</li>
+                <li>Scan the QR on another device by tapping <strong>Receive Files</strong>.</li>
+                <li>Transfer will start immediately, using the maximum speed of your WiFi or cellular connection.</li>
+              </ol>
+              <img src="../../img/mobile/02.-send_files-ANDROID.png" style="width:300px;margin-left:100px" />
+            </p>
+            <p>
+              <em>Note: You won’t be able to leave the transfer view until the transfer is finished.</em>
+            </p>
+          </section>
+
+          <!--=== SECTION: Sending Files ===-->
+          <section id="mobileBackup">
+            <div class="page-header">
+              <h2>Mobile Backup</h2>
+            </div>
+            <p>BitTorrent Sync lets you backup folders and files (on Android) and your entire Camera Roll (on iOS - coming soon).</p>
+            <p>Backup folders aren’t connected via QR codes, so you’ll need to enter the secret key manually. To make the process easier, you can e-mail it from the application, or copy the key and send it via an application of your choice. To set up and start backup:</p>
+            <p>On Android
+              <ol>
+                <li>Tap the <strong>Add Folder</strong> icon in the <strong>Backup</strong> tab.</li>
+                <li>Choose the folders you want to backup.</li>
+                <li>You’ll get a secret key. Enter your key on another device to start backup.</li>
+              </ol>
+              <img src="../../img/mobile/03.-backup-ANDROID.png" style="width:300px;margin-left:100px" />
+            </p>
+          </section>
+
+          <!--=== SECTION: Permissions ===-->
+          <section id="permissions">
+            <div class="page-header">
+              <h2>Permissions</h2>
+            </div>
+            <p>BitTorrent Sync will require the following permissions to be installed on your Android-powered device:
+              <ul>
+                <li><u>Full network access</u> - allows the app to download sync data to your phone and upload it to other devices connected by your secret key. BitTorrent Inc. does not see or store any of your personal information.</li>
+                <li><u>View network connections</u> - allows the app to see information about network connections, such as existing and connected networks.</li>
+                <li><u>View Wi-Fi connections</u> - allows the app to access information about WiFi networking: whether or not WiFi is enabled, and the names of connected WiFi devices.</li>
+                <li><u>Modify or delete the contents of your USB storage</u> - allows the app to write the files you downloaded to the USB storage, and apply changes to these files.</li>
+                <li><u>Test access to protected storage</u> - allows the app to test a permission for USB storage that will be available on future devices.</li>
+                <li><u>Take pictures and videos</u> - allows Sync to connect to other devices. BitTorrent Sync uses the camera feature to scan QR codes.</li>
+              </ul>
+            </p>
+          </section>
+
+          <br />
+
         </div> <!-- END SPAN6 -->
-        <div class="span6">
-          <img class="thumbnail" src="../../img/synclarge.png" />
-      </div>
-    </div> <!-- /container -->
-  </div> <!-- /content -->
+      </div> <!-- /container -->
+    </div> <!-- /content -->
   <div id="push"></div>
 </div> <!-- /wrap -->
 
 <div id="footer">
-  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |  
-  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |  
+  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |
+  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |
   <a href="http://www.bittorrent.com" target="_blank">BitTorrent.com</a>
   <div class="footerhr"><hr></div>
-  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> / 
+  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> /
   Built with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
 </div> <!-- /footer -->
 

@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <script src="//cdn.optimizely.com/js/246838682.js"></script>
+  <script src="//cdn.optimizely.com/js/50136351.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>BitTorrent Labs</title>
@@ -42,28 +42,31 @@
     </div> <!-- /container -->
   </div>  <!-- /top -->
   <div id="content">
-    <div class="container">
+    <div class="sync-cta">
       <div class="cta cta-details">
         <div class="container">
           <h1>BitTorrent Sync</h1>
           <h4>Automatically sync files via secure, distributed technology.</h4>
-          <a onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);" href="#downloadpop" data-toggle="modal" class="btn btn-info btn-large" style="letter-spacing:1px">Download</a>
-          <p><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a> | <a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">forum</a></p>
+          <br/>
+          <a href="#syncdownloadpop" role="button" class="btn btn-toad" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">Download</a>
         </div> <!-- /container -->
       </div> <!-- /cta -->
+    </div>
+    <div class="container">
       <nav class="navbar secondnav center">
-        <hr>
         <div class="navinner">
           <ul class="nav">
             <li><a href="../sync.html"><span>INFO</span></a></li>
             <li><a href="#"><span class="navactive">GET STARTED</span></a></li>
             <li><a href="technology.html"><span>TECHNOLOGY</span></a></li>
             <li><a href="mobile.html"><span>MOBILE</span></a></li>
+            <li><a target="_blank" href="http://forum.bittorrent.com/topic/16410-bittorrent-sync-faq/">FAQs</a></li>
+            <li><a target="_blank" href="http://forum.bittorrent.com/forum/56-bittorrent-sync/">FORUM</a></li>
           </ul>
         </div> <!-- /navinner -->
         <hr>
       </nav>
-      <div id="downloadpop" class="modal hide fade in span6">
+      <div id="syncdownloadpop" class="modal hide fade in span6">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">x</button>
           <h3>Select Your Operating System:</h3>
@@ -71,20 +74,36 @@
         <div class="modal-body">
           <div class="row">
             <div class="span3 center">
-              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img src="../../img/icons/win-dl.png">
-                <h5>Download for Windows</h5></a>
-                <p style="font-size:11px;">(XP SP3 or newer)</p>
+              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.exe" onclick="window.open('win-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Windows',, false]);"><img style="width:150px" src="../../img/icons/win-dl.png">
+              <h5 style="margin:0px 0px 0px 0px">Windows</h5></a>
+              <p style="font-size:11px;">(XP SP3 or newer)</p>
             </div>
             <div class="span3 center">
-              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img src="../../img/icons/mac-dl.png">
-                <h5>Download for Mac</h5></a>
-                <p style="font-size:11px;">(10.6 or newer)</p>
+              <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BTSync.dmg" onclick="window.open('mac-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Mac',, false]);"><img style="width:150px" src="../../img/icons/mac-dl.png">
+              <h5 style="margin:0px 0px 0px 0px">Mac OSX</h5></a>
+              <p style="font-size:11px;">(10.6 or newer)</p>
             </div>
           </div> <!--row-->
-          <hr class="gray">
+          <hr class="gray" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px">
+          <h4>Mobile:</h4>
+          <div class="row" style="margin-top:-15px">
+            <div class="span3 center">
+              <a href="https://play.google.com/store/apps/details?id=com.bittorrent.sync" onclick="_gaq.push(['_trackEvent', 'Download', 'Sync', 'Android',, false]);">
+                <img style="width:80px" alt="Android app on Google Play"
+                     src="../../img/icons/android.png" />
+                <h5 style="margin:0px 0px 0px 0px">Android</h5>
+              </a>
+            </div> <!--span3-->
+            <div class="span3 center">
+              <img style="width:100px" src="../../img/icons/mac-dl.png">
+              <h5 style="margin:0px 0px 0px 0px">iOS</h5>
+              <p style="font-size:11px;">(coming soon)</p>
+            </div> <!--span3-->
+          </div> <!--row-->
+          <hr class="gray" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px">
           <h4>Linux and NAS Devices:</h4>
           <div class="row">
-            <div class="span3" style="float:left;">
+            <div class="span3">
               <ul>
                 <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_arm.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux ARM',, false]);">Linux ARM</a></li>
                 <li><a href="http://btsync.s3-website-us-east-1.amazonaws.com/btsync_powerpc.tar.gz" onclick="window.open('other-download.html'); _gaq.push(['_trackEvent', 'Download', 'Sync', 'Linux PowerPC',, false]);">Linux PowerPC</a></li>
@@ -102,7 +121,7 @@
               </ul>
             </div> <!--span3-->
           </div> <!--row-->
-          <div style="font-size:11px;" class="center">
+          <div style="font-size:11px;margin-top:-20px" class="center">
             <br/>
             <p>By using this application, you agree to our <a href="http://www.bittorrent.com/legal/privacy" target="_blank">Privacy Policy</a> and <a href="http://www.bittorrent.com/legal/terms-of-use" target="_blank">Terms</a>.</p>
           </div>
@@ -116,18 +135,12 @@
         <div class="span3 docs-bar">
           <ul class="nav nav-list docs-nav">
             <li><a href="#getting-started"><i class="icon-chevron-right"></i> Getting Started</a></li>
-            <li><a href="#choose-folder"><i class="icon-chevron-right"></i> Choosing folders</a></li>
-            <li><a href="#secret"><i class="icon-chevron-right"></i> Using a Secret</a></li>
-            <li><a href="#one-way-sync"><i class="icon-chevron-right"></i> One-Way Sync</a></li>
-            <li><a href="#one-time-key"><i class="icon-chevron-right"></i> One-Time Secret</a></li>
-            <li><a href="#app-preferences"><i class="icon-chevron-right"></i> App Preferences</a></li>
-            <li><a href="#folder-preferences"><i class="icon-chevron-right"></i> Folder Preferences</a></li>
-            <li><a href="#folder-general"><i class="icon-chevron-right"></i>  -&nbsp;&nbsp;General</a></li>
-            <li><a href="#folder-advanced"><i class="icon-chevron-right"></i>  -&nbsp;&nbsp;Advanced</a></li>
-            <li><a href="#linux-nas"><i class="icon-chevron-right"></i> Linux and NAS</a></li>
-            <li><a href="#webui"><i class="icon-chevron-right"></i> -&nbsp;&nbsp;WebUI</a></li>
-            <li><a href="#config-file"><i class="icon-chevron-right"></i> -&nbsp;&nbsp;Config File</a></li>
-            <li><a href="#faq"><i class="icon-chevron-right"></i> FAQ</a></li>
+            <li><a href="#addingFolders"><i class="icon-chevron-right"></i> Adding Folders</a></li>
+            <li><a href="#shareFolder"><i class="icon-chevron-right"></i> Sharing Folders</a></li>
+            <li><a href="#joinFolder"><i class="icon-chevron-right"></i> Joining Folders</a></li>
+            <li><a href="#folderPreferences"><i class="icon-chevron-right"></i> Folder Preferences</a></li>
+            <li><a href="#generalTab"><i class="icon-chevron-right"></i>  -&nbsp;&nbsp;General Tab</a></li>
+            <li><a href="#secretKeyAdvanced"><i class="icon-chevron-right"></i>  -&nbsp;&nbsp;Secret Key Tab</a></li>
           </ul>
         </div> <!-- /span3 -->
         <div class="span9">
@@ -136,125 +149,95 @@
             <div class="page-header top-header">
               <h2>Getting Started</h2>
             </div>
+            <p>BitTorrent Sync allows you to synchronize an unlimited number folders and files of any size across multiple devices.
+            </p>
             <ol>
               <li>Install BitTorrent Sync on the devices you want to sync.</li>
-              <li><a href="get-started.html#choose-folder">Choose a folder</a> that you want to synchronize and <a href="get-started.html#secret">generate a secret</a> for that folder on one of the devices. The secret is random and unique, and functions like a key that connects multiple devices into one sync network.</li>
+              <li><a href="#addingFolders">Add a folder</a> that you want to synchronize and generate a <a href="technology.html#secret">secret</a> for that folder on one of the devices. The secret is random and unique, and functions like a key that connects multiple devices into one sync network.</li>
               <li>On the other devices, choose a folder to sync and enter the same secret.</li>
               <li>Leave BitTorrent Sync running on all devices you want to keep in sync.</li>
-              <li>Manage your sync folders at any time via the application interface on Windows and Mac, or via the WebUI and config file on Linux.</li>
+              <li>Manage your sync folders at any time via the application interface on Windows and Mac, Linux (WebUI and config file), or mobile.</li>
             </ol>
           </section>
 
-          <!--=== SECTION: Choosing Folders ===-->
-          <section id="choose-folder">
+          <!--=== SECTION: Add Folders ===-->
+          <section id="addingFolders">
             <div class="page-header">
-                <h2>Choosing Folders</h2>
+                <h2>Add Folders to Sync</h2>
             </div>
-            <p>BitTorrent Sync allows you to synchronize any number of folders and files of any size.</p>
-            <p>To add a new folder to Sync, at the bottom of the <strong>Folders</strong> tab, click on the ‘+’ button (Mac) or “Add” button (Windows). Choose any folder on your computer or external drive (note that you need to have proper permissions to modify the folder).</p> 
-            <p>If the folder doesn’t exist, you can create a new folder anywhere on your computer.</p>
-            <img class="screenshot" src="../../img/screenshots/sync1.png" />
-            
+            <ol>
+              <li>Click on the ‘+’ button (Mac) or “Add a Sync Folder” button (Windows) at the bottom of the Folders tab.</li>
+              <img src="../../img/screenshots/1.choosing_folders.png" />
+              <li id="secret">Generate a new secret for your folder (this is a private key needed to connect devices).</li>
+              <img src="../../img/screenshots/secret.png" />
+              <li>Choose a folder on your computer or external drive (note that you need to have proper permissions to modify the folder). Or click New Folders to create and add a new folder to start syncing.</li>
+              <li>Click OK. Your folder will be added to the Sync application and ready to share.</li>
+            </ol>
           </section>
-          <!--=== SECTION: Source ===-->
-          <section id="secret">
+
+          <!--=== SECTION: Share Folder ===-->
+          <section id="shareFolder">
             <div class="page-header">
-              <h2>Generating/Using a Secret</h2>
+                <h2>Share a Folder to Start Syncing</h2>
             </div>
-            <p>Folders that sync are connected by a common <a href="technology.html#secret">secret</a>--a private key that is unique for every sync folder.</p>
-            <p>To initiate a sync network, click <strong>Generate</strong> to create a new secret. This secret must be then entered on all the devices you want to sync. If you are joining a sync network, enter an existing secret that someone has shared with you.</p>
-            <img src="../../img/screenshots/sync2.png" class="screenshot"/>
-            <p>If you need to find the secret later on, it can be found by right-clicking on the folder in the <strong>Folders</strong> tab, and copying it to the clipboard, or looking on the advanced tab in folder preferences.</p>
-            <img src="../../img/screenshots/sync3.png" class="screenshot"/>
+            <ol>
+              <li>Right click the folder you want to share.</li>
+              <li>Select ‘Copy Secret.’ The secret will be copied to your clipboard.</li>
+              <img src="../../img/screenshots/3.copy_secret_1.png" />
+              <li>Send that secret to your friends or collaborators; have them join the folder from their Sync Application.</li>
+            </ol>
           </section>
-          <!--=== SECTION: One-Way Sync ===-->
-          <section id="one-way-sync">
+
+          <!--=== SECTION: Join Folder ===-->
+          <section id="joinFolder">
             <div class="page-header">
-                <h2>One-Way Synchronization</h2>
+                <h2>Join Existing Folder</h2>
             </div>
-            <p>If you want to sync information from your computer only (and not the other way round), you can do it using a read-only secret. For example, you might want to use a read only secret to share a folder full of photos and videos with your family. This way, you are the only person who can add or remove things from the folder.</p>
-            <p>The read-only secret can be found by right-clicking on the folder in the <strong>Folders</strong> tab, opening folder preferences, and clicking on the <strong>Advanced</strong> tab. </p>
-            <img src="../../img/screenshots/sync4.png" class="screenshot"/>
-            <p>Any device setup using the read-only key will be fully synced, but no changes will ever be copied back to the original device. You can use the read-only secret in combination with the master secret depending on what type of access you are willing to grant to other devices. Devices with read-only secrets cannot generate their own secrets for a folder.</p>
+            <ol>
+              <li>Click on the ‘+’ button (Mac) or “Add a Sync Folder” button (Windows) at the bottom of the Folders tab in your Sync Application.</li>
+              <li>Enter the existing secret that someone shared with you in Shared Secret.</li>
+              <li>Choose a destination folder.</li>
+              <li>Click OK. Your folder will begin syncing with the folder shared with you.</li>
+            </ol>
           </section>
-          <!--=== SECTION: One-Time Key ===-->
-          <section id="one-time-key">
-            <div class="page-header">
-                <h2>One-Time Secret</h2>
-            </div>
-            <p>For security reasons, you may not want to share a master secret. In this case you can create a one-time key that can be used only once and expires after 24 hours. This can either be a full access or a read-only key that is created on the base of the master secret. After the one-time secret is entered, the device will receive a permanent full access or read-only secret for the sync network.</p>
-            <img src="../../img/screenshots/sync5.png" class="screenshot"/>
-          </section>
-          <!--=== SECTION: One-Time Key ===-->
-          <section id="app-preferences">
-            <div class="page-header">
-                <h2>Application Preferences</h2>
-            </div>
-            <p>You can set your preferences for the application in the <strong>Preferences</strong> tab in the main window.</p>
-            <p>Here you can change the name of your computer as it is shown on other devices, configure updates and notifications, change the listening port and map it using UPnP.  You can also set limits for your upload and download speeds.</p>
-            <img src="../../img/screenshots/sync6.png" class="screenshot"/>
-            <p>This tab also allows access to advanced application preferences. Note that they are intended only for expert users and you modify them at your own risk. Information about the advanced preferences is available in our <a href="http://btsync.s3-website-us-east-1.amazonaws.com/BitTorrentSyncUserGuide.pdf">User Guide</a>.</p>
-          </section>
+
           <!--=== SECTION: Folder Preferences ===-->
-          <section id="folder-preferences">
+          <section id="folderPreferences">
             <div class="page-header">
                 <h2>Folder Preferences</h2>
             </div>
-            <p>Apart from changing settings for the whole application, BitTorrent Sync lets you fine-tune preferences for each folder. They can be accessed by double- or right-clicking on a folder in the <strong>Folders</strong> tab.</p>
+            <p>BitTorrent Sync lets you fine-tune preferences for each folder. Right click on a folder in the <strong>Folders</strong> tab to access individual folder preferences.
+            </p>
           </section>
-          <!--===SECTION: Folder General Preferences===-->
-          <section id="folder-general">
-            <h3>General Tab</h3>
-            <p>BitTorrent Sync is preconfigured to ensure the best performance, but feel free to change settings according to your needs:</p>
-            <ul>
-              <li>The relay server is used only when it is impossible to connect to other devices directly due to NAT issues.</li>
-              <li>The tracker server facilitates communication and discovery between devices.</li>
-              <li>‘Delete Files to Sync trash’ saves all the files deleted on other clients to a hidden ‘.SyncTrash’ folder. If you uncheck this option, deleted files will be moved to system Trash\Recycle Bin (depending on your OS).</li>
-              <li>‘Use predefined hosts’ is an option to specify <em>ip:port</em> or <em>host:port</em> of known clients. This way, if one of your devices has a static and accessible IP, peers can connect to it directly.</li>
-            </ul>
-            <img src="../../img/screenshots/sync7.png" class="screenshot"/>
-          </section>
-          <!--===SECTION: Folder General Preferences===-->
-          <section id="folder-advanced">
-            <h3>Advanced Tab</h3>
-            <p>Advanced folder preferences is the place where you can copy, change or generate new secrets for your sync folder.</p>
-            <ul>
-              <li><em><a href="technology.html#secret">Secret</a></em> is a 32-character master key for connecting folders. All the folders added with this secret will be granted a full set of permissions for two-way synchronization. The master secret can be changed at any time  or replaced with a custom Base64 string more than 40 symbols long (any change to the folder secret needs to be re-entered on all the devices in the sync network).</li>
-              <li><em>Read only secret</em> is generated on the basis of the master secret and is used for one-way synchronization. Any folder with the read-only secret will be fully synced, but changes made in the folder will never be synced back to the original device. It is also not possible to manage secrets for the folder if access to the folder is granted by a read-only secret.</li>
-              <li><em>One-time secret</em> is a security option available for the folders operated by a master secret.  You can generate either a full access or read only short key (16 characters) which can be used only once and should be activated within a limited period of 24 hours. When connected, a folder added with a one-time secret will receive a permanent master or read-only secret from the device where the one-time secret was generated.</li>
-            </ul>
-            <img src="../../img/screenshots/sync7_2.png" class="screenshot"/>
-          </section>
-          <!--=== SECTION: Linux and NAS ===-->
-          <section id="linux-nas">
+
+          <!--=== SECTION: Properties General Tab ===-->
+          <section id="generalTab">
             <div class="page-header">
-                <h2>Linux and NAS</h2>
+                <h3>Properties General Tab</h3>
             </div>
+            <p>BitTorrent Sync is preconfigured to ensure the best performance, but feel free to change settings according to your needs:
+              <ul>
+                <li>The relay server is used only when it is impossible to connect to other devices directly due to NAT issues.</li>
+                <li>The tracker server facilitates communication and discovery between devices.</li>
+                <li>‘Store deleted files in SyncArchive’ saves all the files deleted on other clients to the  ‘.SyncArchive’ folder in your sync directory. If you uncheck this option, deleted files will be moved to system Trash\Recycle Bin (depending on your OS).</li>
+                <li>‘Use predefined hosts’ is an option to specify <em>ip:port</em> or <em>host:port</em> of known clients. This way, if one of your devices has a static and accessible IP, peers can connect to it directly.</li>
+              </ul>
+            </p>
           </section>
-          <!--===SECTION: Folder General Preferences===-->
-          <section id="folder-advanced">
-            <h3>WebUI</h3>
-            <p>WebUI is the default way of accessing BitTorrent Sync. It can be reached at <em>YourLocalIP:8888/gui</em></p>
-            <img src="../../img/screenshots/sync8.png" class="screenshot"/>
-            <p>You can manage both general and folder preferences via WebUI the same way as from a desktop application.</p>
-          </section>
-          <!--===SECTION: Folder General Preferences===-->
-          <section id="config-file">
-            <h3>Config File</h3>
-            <p>Config file offers a slightly wider variety of options to configure. It is a JSON format file.</p>
-            <img src="../../img/screenshots/sync9.png" class="screenshot"/>
-            <p>Setting preferences using the config file:</p>
-            <ol>
-              <li>Get a sample config by running <em>--dump-sample-config</em>. You’ll see a list of options and commentary.</li>
-              <li>Save config file to any desired location. For example, to save it to the current directory, run:  <em>./btsync --dump-sample-config > sync.conf</em></li>
-              <li>Customize the settings and run BitTorrent Sync with the modified config. For example, if your config file is in the same directory with BitTorrent Sync, run:  <em>./btsync --config sync.conf</em></li>
-            </ol>
-            <p>Before running BitTorrent Sync with the config file, make sure it is a valid JSON. Otherwise, you’ll get an error message.</p>
-            <p>BitTorrent Sync offers a lot of configuration options to make sure you achieve what you need. The default Sync settings are based on our extensive experience in networking and P2P networking and are the most suitable for most users.</p>
-          </section>
-          <section id="faq">
-            <h3>FAQ</h3>
-            <p>If you have additional questions or comments about BitTorrent Sync, please visit the <a href="http://forum.bittorrent.com/forum/56-bittorrent-sync/" target="_blank">BitTorrent Sync forum</a>.</p>
+
+          <!--=== SECTION: Secret Key Advanced Tab ===-->
+          <section id="secretKeyAdvanced">
+            <div class="page-header">
+                <h3>Secret Key Advanced Tab</h3>
+            </div>
+            <p>This tab is the place where you can manage (copy, change or generate new) secrets for your sync folder.
+              <ul>
+                <li><a href="technology.html#secret">Secret</a> is a 32-character master key for connecting folders. All the folders added with this secret will be granted a full set of permissions for two-way synchronization. The master secret can be changed at any time or replaced with a custom Base64 string more than 40 symbols long (any change to the folder secret needs to be re-entered on all the devices in the sync network).</li>
+                <li><em>Read only secret</em> is generated on the basis of the master secret and is used for one-way synchronization. Any folder with the read-only secret will be fully synced, but changes made in the folder will never be synced back to the original device. It is also not possible to manage secrets for the folder if access to the folder is granted by a read-only secret.</li>
+                <li><em>One-time secret</em> is a security option available for the folders operated by a master secret. You can generate either a full access or read only short key (16 characters) which can be used only once and should be activated within a limited period of 24 hours. When connected, a folder added with a one-time secret will receive a permanent master or read-only secret from the device where the one-time secret was generated.</li>
+                <li><em>Connect mobile</em> button shows a unique QR code that is based on the secret key for your folder and can be either full access or read only. This QR code serves as a means to connect and sync folders on mobile devices to the folders on your computer.</li>
+              </ul>
+            </p>
           </section>
         </div><!-- /span9 -->
       </div><!-- /row -->
@@ -264,11 +247,11 @@
 </div> <!-- /wrap -->
 
 <div id="footer">
-  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |  
-  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |  
+  <a href="http://blog.bittorrent.com" target="_blank">The BitTorrent Blog</a>  |
+  <a href="http://engineering.bittorrent.com" target="_blank">The Engineering Blog</a>  |
   <a href="http://www.bittorrent.com" target="_blank">BitTorrent.com</a>
   <div class="footerhr"><hr></div>
-  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> / 
+  Pattern from <a href="http://subtlepatterns.com/" target="_blank">subtlepatterns</a> /
   Built with <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>
 </div> <!-- /footer -->
 
