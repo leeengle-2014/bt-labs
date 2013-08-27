@@ -94,9 +94,9 @@
               </a>
             </div> <!--span3-->
             <div class="span3 center">
-              <img style="width:100px" src="../../img/icons/mac-dl.png">
+              <a href="https://itunes.apple.com/us/app/bittorrent-sync/id665156116?ls=1&mt=8" target="_blank" onclick="_gaq.push(['_trackEvent', 'Download', 'Sync', 'iOS',, false]);"><img style="width:100px" src="../../img/icons/mac-dl.png"></a>
               <h5 style="margin:0px 0px 0px 0px">iOS</h5>
-              <p style="font-size:11px;">(coming soon)</p>
+              <p></p>
             </div> <!--span3-->
           </div> <!--row-->
           <hr class="gray" style="margin:0px 0px 0px 0px;padding:0px 0px 0px 0px">
@@ -149,8 +149,8 @@
             <p>Want to share and sync files on the go? BitTorrent Sync lets you share files with family and friends, share files between mobile devices, and backup your phone and tablets.</p>
             <p>BitTorrent Sync is available for install on the following mobile platforms*:
               <ul>
-                <li>Android 2.2 and higher</li>
-                <li>iOS 5.0 and higher (coming soon)</li>
+                <li><a href="#syncdownloadpop" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">Android 2.2 and higher</a></li>
+                <li><a href="#syncdownloadpop" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">iOS 5.0 and higher</a></li>
               </ul>
             </p>
             <p>*Compatible with BitTorrent Sync for desktop version <strong>1.1.27 or later</strong>. <a href="#syncdownloadpop" role="button" data-toggle="modal" onClick="_gaq.push(['_trackEvent', 'Modal', 'Sync', 'Download',, false]);">Download here</a>.</p>
@@ -164,7 +164,7 @@
               <h2>Getting Started Syncing</h2>
             </div>
             <p>Sync files between mobile devices, collaborators, or your home and work PC. Here’s how it works:</p>
-            <p>On Android
+            <p><strong>On Android</strong>
               <ol>
                 <li>Tap the <strong>Add Folder</strong> icon in the Sync tab.</li>
                 <li>Choose a folder you’d like to sync.</li>
@@ -172,7 +172,16 @@
                 <li>Check or uncheck <strong>Automatic Sync</strong>. If you check <strong>Automatic Sync</strong>, all files will be downloaded to your phone or tablet automatically. If you leave it unchecked, you’ll need to choose files to download manually. Not sure? Don’t sweat it. This preference can be changed later in <strong>Folder Preferences</strong>.</li>
                 <li>Click <strong>Done</strong>. You’re ready to go.</li>
               </ol>
-              <img src="../../img/mobile/01.-add_sync_folder-ANDROID.png" style="width:300px;margin-left:100px" />
+              <img src="../../img/mobile/sync-add-folder-android.png" style="width:300px;margin-left:100px" />
+            </p>
+            <p><strong>On iOS</strong>
+              <ol>
+                <li>Click <strong>Add Folder</strong> button in the Sync tab.</li>
+                <li>Scan the QR code from a Sync folder on your computer.</li>
+                <li>Sync will automatically create a new sync folder with the same name as the folder on your computer. You can change the folder name to whatever you want. We won’t judge.</li>
+                <li>Click <strong>Done</strong>. You’re now ready to sync.</li>
+              </ol>
+              <img src="../../img/mobile/sync-folders.png" style="width:300px;margin-left:100px; border: solid 1px #cccccc;" />
             </p>
           </section>
 
@@ -201,10 +210,11 @@
                 <li>Scan the QR on another device by tapping <strong>Receive Files</strong>.</li>
                 <li>Transfer will start immediately, using the maximum speed of your WiFi or cellular connection.</li>
               </ol>
-              <img src="../../img/mobile/02.-send_files-ANDROID.png" style="width:300px;margin-left:100px" />
+              <img src="../../img/mobile/sync-send-files-android.png" style="width:300px;margin-left:30px" />
+              <img src="../../img/mobile/sync-send-files-ios.png" style="width:300px;margin-left:30px; vertical-align: top;" />
             </p>
             <p>
-              <em>Note: You won’t be able to leave the transfer view until the transfer is finished.</em>
+              <em>Note: You won’t be able to leave the transfer view until the transfer is finished. On iOS devices, transfers are not possible when the application is running in the background.</em>
             </p>
           </section>
 
@@ -215,13 +225,24 @@
             </div>
             <p>BitTorrent Sync lets you backup folders and files (on Android) and your entire Camera Roll (on iOS - coming soon).</p>
             <p>Backup folders aren’t connected via QR codes, so you’ll need to enter the secret key manually. To make the process easier, you can e-mail it from the application, or copy the key and send it via an application of your choice. To set up and start backup:</p>
-            <p>On Android
+            <p><strong>On Android</strong>
               <ol>
                 <li>Tap the <strong>Add Folder</strong> icon in the <strong>Backup</strong> tab.</li>
                 <li>Choose the folders you want to backup.</li>
                 <li>You’ll get a secret key. Enter your key on another device to start backup.</li>
               </ol>
-              <img src="../../img/mobile/03.-backup-ANDROID.png" style="width:300px;margin-left:100px" />
+              <img src="../../img/mobile/sync-backup-android.png" style="width:300px;margin-left:100px" />
+            </p>
+            <p><strong>On iOS</strong>
+              <ol>
+                <li>Tap the <strong>Enable Backup</strong> button in the <strong>Backup</strong> tab. This will prep your Camera Roll for backup.</li>
+                <li>Enter the secret key you receive on the device you want to use for backup.</li>
+                <li>You can configure or disable backup later, by going to the application’s <strong>Settings</strong>.</li>
+              </ol>
+            </p>
+            <p>When backing up a folder, no changes from other devices will impact your files, and new files added to the chosen mobile folders will be automatically uploaded. You can access the secret key at any time by tapping the <strong>Backup</strong> folder on your mobile device. You can also add more backup folders later.
+            <img src="../../img/mobile/sync-backup.png" style="width:300px;margin-left:30px; margin-top: 15px; border: solid 1px #cccccc;" />
+            <img src="../../img/mobile/sync-backup-progress.png" style="width:300px;margin-left:30px; margin-top: 15px; border: solid 1px #cccccc;" />
             </p>
           </section>
 
