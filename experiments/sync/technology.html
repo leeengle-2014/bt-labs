@@ -88,7 +88,7 @@
           <h4>Mobile:</h4>
           <div class="row" style="margin-top:-15px">
             <div class="span3 center">
-              <a href="https://play.google.com/store/apps/details?id=com.bittorrent.sync" onclick="_gaq.push(['_trackEvent', 'Download', 'Sync', 'Android',, false]);">
+              <a href="https://play.google.com/store/apps/details?id=com.bittorrent.sync&referrer=utm_source%3Dhome%26utm_campaign%3Dsynchome" onclick="_gaq.push(['_trackEvent', 'Download', 'Sync', 'Android',, false]);">
                 <img style="width:80px" alt="Android app on Google Play"
                      src="../../img/icons/android.png" />
                 <h5 style="margin:0px 0px 0px 0px">Android</h5>
@@ -192,8 +192,8 @@
               <li><u>Local peer discovery</u>. All peers inside local network are discovered by sending broadcast packets. If there are peers with the same secret they respond to the broadcast message and connect.</li>
               <li><u>Peer exchange (PEX)</u>. When two peers are connected, they exchange information about other peers they know.</li>
               <li><u>Known hosts (folder settings)</u>. If you have a known host with a static <em>ip:port</em>, you can specify this in Sync client, so that it connects to the peer using this information.</li>
-              <li><u>DHT</u>. Sync uses DHT to distribute information about itself and obtain the information about other peers with this secret. Sync sends SHA2(Secret):ip:port to DHT to announce itself and will get a list of peers by asking DHT for the following key SHA2(Secret)</li>
-              <li><u>BitTorrent tracker</u>. BitTorrent Sync can use a specific tracker server to facilitate peer discovery. The tracker server sees the combination of SHA2(secret):ip:port and helps peers connect directly. The BitTorrent Sync tracker also acts like a STUN server and can help do a NAT traversal for peers so that they can establish a direct connection even behind a NAT.</li>
+              <li><u>DHT</u>. Sync uses DHT to distribute information about itself and obtain the information about other peers with this secret. Sync sends SHA1(Secret):ip:port to DHT to announce itself and will get a list of peers by asking DHT for the following key SHA1(Secret)</li>
+              <li><u>BitTorrent tracker</u>. BitTorrent Sync can use a specific tracker server to facilitate peer discovery. The tracker server sees the combination of SHA1(secret):ip:port and helps peers connect directly. The BitTorrent Sync tracker also acts like a STUN server and can help do a NAT traversal for peers so that they can establish a direct connection even behind a NAT.</li>
             </ul>
             <p>We recommend that you use a tracker server instead of DHT for reasons of faster response and NAT traversal, so peers have a higher probability of networking directly.</p>
           </section>
